@@ -1,0 +1,95 @@
+CSV text has been written to file : Schlib1.csv
+
+Library Component Count : 87
+
+Name                Description
+----------------------------------------------------------------------------------------------------
+
+1N4001              1.0A RECTIFIER
+4504                CMOS HEX VOLTAGE-LEVEL SHIFTER FOR TTL-TO-CMOS OR CMOS-TO-CMOS
+723HC               723HC
+74595               CD74HC595 8-Bit Shift Registers With 3-State Output Registers
+7474                Dual D Flip-Flop
+7805                IC PWR MGT-V-REG-ADJ-POS 5/37V 3PINS
+7SEG1_BLUE_A_0.56   Segment Digit LED Display
+7SEG1_BLUE_K_0.56   Segment Digit LED Display
+7SEG1_GREEN_A_0.56  Segment Digit LED Display
+7SEG1_GREEN_K_0.56  Segment Digit LED Display
+7SEG1_RED_A_0.56    Segment Digit LED Display
+7SEG1_RED_K_0.56    Segment Digit LED Display
+7SEG1_YELLOW_A_0.56 Segment Digit LED Display
+7SEG1_YELLOW_K_0.56 Segment Digit LED Display
+A4988_STEPPER_MOTOR_DRIVER_CARRIERStepper Motor Driver
+AMS1117             1A Bipolar Linear Regulator
+ArduinoNano         A breadboard-friendly board based on the ATMEGA328 kit
+B0505S              
+BAT60               DIODE SCHOTTKY 10V 3A SOD323-2
+BB135               Diode, Varactor, 20mA, 30V, ~2-20pF tuning range
+BUZZER              ALARM-AUDIBLE PIEZO ALARM PIN TYPE; 5V
+Cap-Non-DIP         Non-polar capacitor
+Cap-Non-SMD         Non-polar capacitor
+Cap-Pol-DIP         Polarized capacitor
+Cap-Pol-SMD         Non-polar capacitor
+ECG_SENSOR          
+ESP32 NODEMCU-32    
+ESP32-DEVKIT-V1     - Transceiver; 802.11 b/g/n _Wi-Fi, WiFi, WLAN_, Bluetooth® Smart Ready 4.x Dual Mode For Use With ESP-WROOM-32
+ESP32-S             Tensilica Xtensa LX6 microprocessor @ 160 or 240 MHz · 320 KiB SRAM
+ESP32-S WIFI_BT_SoC 
+FIT50-1             FIT50-1 Series 47.4 uH 2.8 A 78.9 mOhm Through Hole Vertical Toroid Inductor
+HEF4067             16-channel analog multiplexer/demultiplexer
+Header4             4P-XH2.54MM SMT connector
+IDE_3X2             Male Box Header WR-BHD, THT, Vertical, pitch 2.54 mm, 6 pins
+IDE_5X2             Male Box Header WR-BHD, THT, Vertical, pitch 2.54 mm, 10 pins
+INDUCTOR            2.2µH Shielded Wirewound Inductor 8.2A 10mOhm Max Nonstandard, 4 Lead
+INDUCTOR_FE         2.2µH Shielded Wirewound Inductor 8.2A 10mOhm Max Nonstandard, 4 Lead
+IRFR3910TRLPBF      N-Channel 16A (Tc) 79W (Tc) Surface Mount D-Pak
+JOYSTICK            
+JP1                 3MM PAD
+JP1_IN              3MM PAD
+JP2                 
+JP2_IN              
+JP3                 
+JP3_IN              
+JP4                 
+JP4_IN              
+JSN-SR04T           
+KF4                 Terminal 4P-RA-5.08MM
+KF8                 Terminal 8P-RA-5.08MM
+L298N               
+LCD_176x220         
+LCD_176x220_ST7775R 
+LCD_240X320_ILI9341_2.8
+LD1086              1.5A adjustable and fixed low drop positive voltage regulator
+LED 0603 Blue       LED BLUE CLEAR 0603 SMD
+LED 0603 Green      LED GREEN CLEAR 0603 SMD
+LED 0603 Red        LED RED CLEAR 0603 SMD
+LED 0603 Yellow     LED YELLOW CLEAR 0603 SMD
+LM2596_MODULE       
+LM358               7mV 250nA 7uV/C 1MHz 0.6V/uS 0.8mA 3-32V
+Led_RGB_0404        RGB Led 1 x 1 mm Diffused
+Led_RGB_0606        RGB Led 1.6 x 1.6 mm Diffused
+MAX485              Low-Power, Slew-Rate-Limited
+RS-485/RS-422 Transceivers
+MOC3020Z            OPTO-ISOLATOR LED-PTRIAC IF=50mA-max
+MP1583              
+N-CHANNEL-MOSFET    N-Channel 30 V 7.5A (Ta) 900mW (Ta) Surface Mount PowerDI3333-8
+N76E003             
+NPN                 Transistor, NPN, RF, 50mA, 12V
+NRF24L01            
+OV7670              
+P-CHANNEL-MOSFET    Transistor, MOSFET, P-Channel, 12V, 5.2A, 26mOhm
+P0903BDG            N-Channel Power MOSFET
+PC817C              OPTO-ISOLATOR IF=50mA-max
+REF2920             REF29xx 100 ppm/°C, 50 µA in 3-Pin SOT-23 CMOS Voltage Reference
+RELAY               DC ATX203 12V
+RES                 Chip Resistor, 0805, 1%, 1/8 W
+SIM800L             
+SW3x1               Switch 3x1
+SWITCH TACTILE SPST SWITCH TACTILE SPST-NO 0.05A 12V
+Screw               3mm Screw
+TBLOCK-2            Connector Terminal Blocks Receptacle 2 Position 5.08mm Solder Straight Thru-Hole 13.5A/Contact
+TRIAC               TRIAC TO-220AB VRRM=600
+Trans               Transformer
+ULN2803A            Darlington Transistor Arrays, Relay Drivers, Lamp Drivers.
+VHM-314             VHM-314 V2.0 V3.0 DIY Bluetooth Audio Receiver 4.1 5.0 MP3 Lossless Decoder
+ZENER               DIODE-ZNR 5.6V 5% PD=1W IR=10uA
