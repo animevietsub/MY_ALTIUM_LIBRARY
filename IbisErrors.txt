@@ -1,0 +1,19 @@
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code ef).  Converting to space.
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code bf).  Converting to space.
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code bd).  Converting to space.
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code ef).  Converting to space.
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code bf).  Converting to space.
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code bd).  Converting to space.
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code ef).  Converting to space.
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code bf).  Converting to space.
+ERROR (line    0) -
+    Found illegal non-7-bit ASCII character (code bd).  Converting to space.
+ERROR - Could not determine Version for file E:\NEW_DATA\Altium_LIB\TOAN_VERSION_1_0\Spice\Regulator.ibs

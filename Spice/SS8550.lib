@@ -1,0 +1,20 @@
+****************** PNP Epitaixial Silicon Transistor *****************************
+** Product: SS8550BBU / SS8550BTA / SS8550CBU / SS8550CTA / SS8550DBU / SS8550DTA
+** Package: TO-92
+** Terminals: Emitter(1) Base(2) Collector(3)
+**--------------------------------------------------------------------------------                                                                             
+.MODEL SS8550 PNP                               
++ IS     = 1.17631E-13     BF     = 178.208         NF     = 1                  
++ BR     = 5               NR     = 1               ISE    = 1.882E-14          
++ NE     = 1.5             ISC    = 2E-16           NC     = 1.5                
++ VAF    = 51.25           VAR    = 36.6808         IKF    = 3.3034             
++ IKR    = 0.01            RB     = 122             RBM    = 27.073             
++ IRB    = 8.32235E-5      RE     = 0               RC     = 1                  
++ NS     = 1.998           CJE    = 9.95126E-11     VJE    = 0.777949           
++ MJE    = 0.380089        FC     = 0.499252        CJC    = 3.32783E-11        
++ VJC    = 0.651017        MJC    = 0.389073        TF     = 7.96e-10           
++ EG     = 1.1695          XTB    = 1.6730          XTI    = 3             
++ XCJC   = 0.724                     
+**-------------------------------------------------------------------------------- 
+** Creation: Dec-27-2004
+** Fairchild Seminconductor

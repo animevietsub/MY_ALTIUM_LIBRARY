@@ -1,0 +1,2719 @@
+* Library of Darlington Transistor "macromodels"
+*
+*  Copyright OrCAD, Inc. 1998 All Rights Reserved.
+*
+* $Revision:   1.1  $
+* $Author:   rperez  $
+* $Date:   17 Nov 1998 10:46:20  $
+*
+*$
+* BCV46 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 01/21/98 at 10:51
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BCV46     1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .6656
+D1 1 3 Dmodel
+R1 2 4 10.00E6
+R2 4 3 10.00E6
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model PNP
++  IS=45.26E-15 BF=314.6 NF=1 VAF=100
++  IKF=.468 ISE=96.84E-15 NE=1.998 BR=2.029
++  NR=1 VAR=100 IKR=8.438 ISC=87.22E-15
++  NC=2.997 RB=33.27 NK=.4616
++  RE=0 RC=.5943 EG=1.110
++  CJE=17.22E-12 VJE=.35 MJE=.2658 TF=10.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=8.213E-12
++  VJC=.35 MJC=.2487 XCJC=.9 FC=.5
++  TR=10.00E-9
+.MODEL Q2model PNP
++  IS=45.26E-15 BF=314.6 NF=1 VAF=100
++  IKF=.468 ISE=96.84E-15 NE=1.998 BR=2.029
++  NR=1 VAR=100 IKR=8.438 ISC=87.22E-15
++  NC=2.997 RB=33.27 NK=.4616
++  RE=0 RC=.5943 EG=1.110
++  CJE=17.22E-12 VJE=.35 MJE=.2658 TF=10.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.35 MJC=.2487 XCJC=.9 FC=.5
++  TR=10.00E-9
+.ENDS
+*$
+***********************************************************
+* BCV47 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 01/23/98 at 15:34
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BCV47     1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 0.820266
+D1 3 1 Dmodel
+R1 2 4 6.000E9
+R2 4 3 6.000E9
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model NPN
++  IS=2.888205e-014 BF=327.434 NF=1 VAF=100
++  IKF=1.21592 ISE=2.917181e-015 NE=1.26311 BR=1.1125
++  NR=1 VAR=100 IKR=4.83078e-005 ISC=1.371550e-014
++  NC=2.00409 RB=19.98 NK=0.675285
++  RE=0 RC=0.018801 EG=1.110
++  CJE=13.3E-12 VJE=0.35 MJE=0.25875 TF=1.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=8.502E-12
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=1.00E-9
+.MODEL Q2model NPN
++  IS=2.888205e-014 BF=327.434 NF=1 VAF=100
++  IKF=1.21592 ISE=2.917181e-015 NE=1.26311 BR=1.1125
++  NR=1 VAR=100 IKR=4.83078e-005 ISC=1.371550e-014
++  NC=2.00409 RB=19.98 NK=0.675285
++  RE=0 RC=0.018801 EG=1.110
++  CJE=13.3E-12 VJE=0.35 MJE=0.25875 TF=1.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=1.00E-9
+.ENDS
+*$
+***********************************************************
+* BCV49 Darlington Transistor "macromodel" subcircuit
+* created using Optimizer release 8.1 on 02/2/98
+* Optimizer is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BCV49     1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 0.802
+D1 3 1 Dmodel
+R1 2 4 30.00E9
+R2 4 3 30.00E9
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model NPN
++  IS=2.492442e-014 BF=293.158 NF=1 VAF=100
++  IKF=2.98909 ISE=1.001498e-014 NE=1.41485 BR=10.1119
++  NR=1 VAR=100 IKR=2.75689e-005 ISC=1.094700e-013
++  NC=1.23862 RB=1.84509 NK=0.982404
++  RE=0 RC=0.0010099 EG=1.110
++  CJE=15E-12 VJE=.35 MJE=.2746 TF=1.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=8.5E-12
++  VJC=.35 MJC=.2487 XCJC=.9 FC=.5
++  TR=1.00E-9
+.MODEL Q2model NPN
++  IS=2.492442e-014 BF=293.158 NF=1 VAF=100
++  IKF=2.98909 ISE=1.001498e-014 NE=1.41485 BR=10.1119
++  NR=1 VAR=100 IKR=2.75689e-005 ISC=1.094700e-013
++  NC=1.23862 RB=1.84509 NK=0.982404
++  RE=0 RC=0.0010099 EG=1.110
++  CJE=15E-12 VJE=.35 MJE=.2746 TF=1.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.35 MJC=.2487 XCJC=.9 FC=.5
++  TR=1.00E-9
+.ENDS
+*$
+* Motorola 100 Volt 15 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BDW42     1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.451
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 150
+.MODEL Dmodel D
++ IS=6.7687E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=150.7E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.8407 ISE=1.148E-12 NE=1.337 BR=.1884
++  NR=1 VAR=100 IKR=10.01E-3 ISC=936.7E-15
++  NC=2.940 RB=2.1193 NK=.6388
++  RE=0 RC=0.194791 EG=1.110
++  CJE=105.5E-12 VJE=.7775 MJE=.4512 TF=20.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=160.1E-12
++  VJC=.8966 MJC=.3035 XCJC=.9 FC=.5
++  TR=8.00E-6
+.MODEL Q2model NPN
++  IS=150.7E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.8407 ISE=1.148E-12 NE=1.337 BR=.1884
++  NR=1 VAR=100 IKR=10.01E-3 ISC=936.7E-15
++  NC=2.940 RB=2.1193 NK=.6388
++  RE=0 RC=0.194791 EG=1.110
++  CJE=105.5E-12 VJE=.7775 MJE=.4512 TF=20.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.8966 MJC=.3035 XCJC=.9 FC=.5
++  TR=8.00E-6
+.ENDS
+*$
+* Motorola 100 Volt 15 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BDW47     1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 20
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 150
+.MODEL Dmodel D
++ IS=6.7687E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=39.06E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=47.58E-3 ISE=3.255E-12 NE=1.522 BR=499.5
++  NR=1 VAR=100 IKR=19.98 ISC=20.38E-6
++  NC=2.997 RB=36.3932 NK=.5957
++  RE=0 RC=2.02607 EG=1.110
++  CJE=149.9E-12 VJE=1.474 MJE=.5197 TF=10.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=246.2E-12
++  VJC=1.500 MJC=.2676 XCJC=.9 FC=.5
++  TR=500.00E-6
+.MODEL Q2model PNP
++  IS=39.06E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=47.58E-3 ISE=3.255E-12 NE=1.522 BR=499.5
++  NR=1 VAR=100 IKR=19.98 ISC=20.38E-6
++  NC=2.997 RB=36.3932 NK=.5957
++  RE=0 RC=2.02607 EG=1.110
++  CJE=149.9E-12 VJE=1.474 MJE=.5197 TF=10.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=1.500 MJC=.2676 XCJC=.9 FC=.5
++  TR=500.00E-6
+.ENDS
+*$
+* Motorola 100 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BDX33C    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 2.145
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=409.70E-21
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=377.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.302 ISE=2.247E-12 NE=1.343 BR=69.93
++  NR=1 VAR=100 IKR=27.99 ISC=5.783E-12
++  NC=3.197 RB=3.136 NK=.7371
++  RE=0 RC=.1 EG=1.110
++  CJE=105.3E-12 VJE=.8816 MJE=.486 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=158.9E-12
++  VJC=.9144 MJC=.2259 XCJC=.9 FC=.5
++  TR=23.00E-9
+.MODEL Q2model NPN
++  IS=377.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.302 ISE=2.247E-12 NE=1.343 BR=69.93
++  NR=1 VAR=100 IKR=27.99 ISC=5.783E-12
++  NC=3.197 RB=3.136 NK=.7371
++  RE=0 RC=.1 EG=1.110
++  CJE=105.3E-12 VJE=.8816 MJE=.486 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.9144 MJC=.2259 XCJC=.9 FC=.5
++  TR=23.00E-9
+.ENDS
+*$
+* Motorola 100 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BDX34C    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 2.351
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=409.70E-21
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=720.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=.6553 ISE=26.61E-12 NE=1.505 BR=.1272
++  NR=1 VAR=100 IKR=.9738 ISC=284.1E-12
++  NC=1.738 RB=4.180 NK=.704
++  RE=0 RC=83.63E-3 EG=1.110
++  CJE=152.2E-12 VJE=.7257 MJE=.3782 TF=8.0E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=241.5E-12
++  VJC=2 MJC=.2902 XCJC=.9 FC=.5
++  TR=17.0E-6
+.MODEL Q2model PNP
++  IS=720.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=.6553 ISE=26.61E-12 NE=1.505 BR=.1272
++  NR=1 VAR=100 IKR=.9738 ISC=284.1E-12
++  NC=1.738 RB=4.180 NK=.704
++  RE=0 RC=83.63E-3 EG=1.110
++  CJE=152.2E-12 VJE=.7257 MJE=.3782 TF=8.0E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=2 MJC=.2902 XCJC=.9 FC=.5
++  TR=17.0E-6
+.ENDS
+*$
+* Motorola 100 Volt 8 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BDX53C    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 2.145
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=3.4721E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=377.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.302 ISE=2.247E-12 NE=1.343 BR=69.93
++  NR=1 VAR=100 IKR=27.99 ISC=5.783E-12
++  NC=3.197 RB=3.136 NK=.7371
++  RE=0 RC=.1 EG=1.110
++  CJE=105.3E-12 VJE=.8816 MJE=.486 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=158.9E-12
++  VJC=.9144 MJC=.2259 XCJC=.9 FC=.5
++  TR=23.00E-9
+.MODEL Q2model NPN
++  IS=377.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.302 ISE=2.247E-12 NE=1.343 BR=69.93
++  NR=1 VAR=100 IKR=27.99 ISC=5.783E-12
++  NC=3.197 RB=3.136 NK=.7371
++  RE=0 RC=.1 EG=1.110
++  CJE=105.3E-12 VJE=.8816 MJE=.486 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.9144 MJC=.2259 XCJC=.9 FC=.5
++  TR=23.00E-9
+.ENDS
+*$
+* Motorola 100 Volt 8 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BDX54C    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 2.351
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=3.4721E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=720.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=.6553 ISE=26.61E-12 NE=1.505 BR=.1272
++  NR=1 VAR=100 IKR=.9738 ISC=284.1E-12
++  NC=1.738 RB=4.180 NK=.704
++  RE=0 RC=83.63E-3 EG=1.110
++  CJE=152.2E-12 VJE=.7257 MJE=.3782 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=241.5E-12
++  VJC=2 MJC=.2902 XCJC=.9 FC=.5
++  TR=23.00E-9
+.MODEL Q2model PNP
++  IS=720.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=.6553 ISE=26.61E-12 NE=1.505 BR=.1272
++  NR=1 VAR=100 IKR=.9738 ISC=284.1E-12
++  NC=1.738 RB=4.180 NK=.704
++  RE=0 RC=83.63E-3 EG=1.110
++  CJE=152.2E-12 VJE=.7257 MJE=.3782 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=2 MJC=.2902 XCJC=.9 FC=.5
++  TR=23.00E-9
+.ENDS
+*$
+* Motorola 600 Volt 56 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BUT33     1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .8
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 100
+R2 4 3 16
+.MODEL Dmodel D
++ IS=3.3635E-18
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=750
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=30.00E-12 BF=97.10 NF=1 VAF=100
++  IKF=2.966 ISE=249.8E-12 NE=1.263 BR=.1584
++  NR=1 VAR=100 IKR=3.167E-3 ISC=30.75E-9
++  NC=1.744 RB=40.51E-3 NK=.4887
++  RE=0 RC=40.27E-3 EG=1.110
++  CJE=10.00E-12 VJE=.75 MJE=.33 TF=135.0E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=10.00E-12
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=5.50E-5
+.MODEL Q2model NPN
++  IS=30.00E-12 BF=97.10 NF=1 VAF=100
++  IKF=2.966 ISE=249.8E-12 NE=1.263 BR=.1584
++  NR=1 VAR=100 IKR=3.167E-3 ISC=30.75E-9
++  NC=1.744 RB=40.51E-3 NK=.4887
++  RE=0 RC=40.27E-3 EG=1.110
++  CJE=10.00E-12 VJE=.75 MJE=.33 TF=135.0E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=5.50E-5
+.ENDS
+*$
+* Motorola 850 Volt 50 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT BUT34     1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .8
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 100
+R2 4 3 16
+.MODEL Dmodel D
++ IS=2.9246E-18
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=937
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=30.00E-12 BF=97.10 NF=1 VAF=100
++  IKF=2.966 ISE=249.8E-12 NE=1.263 BR=.1584
++  NR=1 VAR=100 IKR=3.167E-3 ISC=83.59E-9
++  NC=1.744 RB=40.49E-3 NK=.4887
++  RE=0 RC=40.27E-3 EG=1.110
++  CJE=10.00E-12 VJE=.75 MJE=.33 TF=130.0E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=1.00E-12
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=4.50E-5
+.MODEL Q2model NPN
++  IS=30.00E-12 BF=97.10 NF=1 VAF=100
++  IKF=2.966 ISE=249.8E-12 NE=1.263 BR=.1584
++  NR=1 VAR=100 IKR=3.167E-3 ISC=83.59E-9
++  NC=1.744 RB=40.49E-3 NK=.4887
++  RE=0 RC=40.27E-3 EG=1.110
++  CJE=10.00E-12 VJE=.75 MJE=.33 TF=130.0E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=4.50E-5
+.ENDS
+*$
+* Motorola 350 Volt 20 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ10000   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.821
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 100
+R2 4 3 15
+.MODEL Dmodel D
++ IS=303.82E-12
++ N=4.7736
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=437
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=83.95E-15 BF=140.4 NF=1 VAF=100
++  IKF=1.014 ISE=5.508E-12 NE=1.338 BR=.7915
++  NR=1 VAR=100 IKR=1.136 ISC=893.2E-12
++  NC=1.999 RB=0.240963 NK=.5374
++  RE=0 RC=0.124458 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=30.0E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=821.5E-12
++  VJC=.35 MJC=.4135 XCJC=.9 FC=.5
++  TR=4.0E-6
+.MODEL Q2model NPN
++  IS=83.95E-15 BF=140.4 NF=1 VAF=100
++  IKF=1.014 ISE=5.508E-12 NE=1.338 BR=.7915
++  NR=1 VAR=100 IKR=1.136 ISC=893.2E-12
++  NC=1.999 RB=0.240963 NK=.5374
++  RE=0 RC=0.124458 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=30.0E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.35 MJC=.4135 XCJC=.9 FC=.5
++  TR=4.0E-6
+.ENDS
+*$
+* Motorola 400 Volt 20 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ10005   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.821
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 100
+R2 4 3 15
+.MODEL Dmodel D
++ IS=303.82E-12
++ N=4.7736
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=500
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=83.95E-15 BF=140.4 NF=1 VAF=100
++  IKF=1.014 ISE=5.508E-12 NE=1.338 BR=.7915
++  NR=1 VAR=100 IKR=1.136 ISC=893.2E-12
++  NC=1.999 RB=0.240963 NK=.5374
++  RE=0 RC=0.124458 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=30E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=821.5E-12
++  VJC=.35 MJC=.4135 XCJC=.9 FC=.5
++  TR=1.25E-6
+.MODEL Q2model NPN
++  IS=83.95E-15 BF=140.4 NF=1 VAF=100
++  IKF=1.014 ISE=5.508E-12 NE=1.338 BR=.7915
++  NR=1 VAR=100 IKR=1.136 ISC=893.2E-12
++  NC=1.999 RB=0.240963 NK=.5374
++  RE=0 RC=0.124458 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=30E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.35 MJC=.4135 XCJC=.9 FC=.5
++  TR=1.25E-6
+.ENDS
+*$
+* Motorola 400 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ10007   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.862
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 100
+R2 4 3 15
+.MODEL Dmodel D
++ IS=16.833E-15
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=500
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=38.94E-15 BF=15.45 NF=1 VAF=100
++  IKF=.5594 ISE=345.0E-15 NE=1.998 BR=69.93
++  NR=1 VAR=100 IKR=27.97 ISC=39.26E-15
++  NC=3.156 RB=.8899 NK=.3435
++  RE=0 RC=0 EG=1.110
++  CJE=10.00E-12 VJE=.75 MJE=.33 TF=47.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=462.5E-12
++  VJC=.1988 MJC=.3552 XCJC=.9 FC=.5
++  TR=10E-9
+.MODEL Q2model NPN
++  IS=38.94E-15 BF=15.45 NF=1 VAF=100
++  IKF=.5594 ISE=345.0E-15 NE=1.998 BR=69.93
++  NR=1 VAR=100 IKR=27.97 ISC=39.26E-15
++  NC=3.156 RB=.8899 NK=.3435
++  RE=0 RC=0 EG=1.110
++  CJE=10.00E-12 VJE=.75 MJE=.33 TF=47.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.1988 MJC=.3552 XCJC=.9 FC=.5
++  TR=10E-9
+.ENDS
+*$
+* Motorola 500 Volt 20 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ10009   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.669
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 100
+R2 4 3 15
+.MODEL Dmodel D
++ IS=303.82E-12
++ N=4.7736
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=625
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=149.9E-15 BF=84.51 NF=1 VAF=100
++  IKF=.5525 ISE=2.194E-12 NE=1.265 BR=1
++  NR=1 VAR=100 IKR=.1 ISC=100.0E-15
++  NC=2 RB=0.128221 NK=.4979
++  RE=0 RC=0.128228 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=100.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=821.5E-12
++  VJC=.35 MJC=.4135 XCJC=.9 FC=.5
++  TR=1E-6
+.MODEL Q2model NPN
++  IS=149.9E-15 BF=84.51 NF=1 VAF=100
++  IKF=.5525 ISE=2.194E-12 NE=1.265 BR=1
++  NR=1 VAR=100 IKR=.1 ISC=100.0E-15
++  NC=2 RB=0.128221 NK=.4979
++  RE=0 RC=0.128228 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=100.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.35 MJC=.4135 XCJC=.9 FC=.5
++  TR=1E-6
+.ENDS
+*$
+* Motorola 400 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ10012   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .7739
+D1 3 1 Dmodel
+R1 2 4 1.000E3
+R2 4 3 30
+.MODEL Dmodel D
++ IS=2.4193E-9
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=500
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=507.9E-15 BF=540.8 NF=1 VAF=100
++  IKF=3.031 ISE=3.816E-12 NE=1.270 BR=69.93
++  NR=1 VAR=100 IKR=27.97 ISC=626.5E-12
++  NC=3.197 RB=.15 NK=.6925
++  RE=0 RC=50.34E-3 EG=1.110
++  CJE=10.00E-12 VJE=.75 MJE=.33 TF=600.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=400.8E-12
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=100.000E-9
+.MODEL Q2model NPN
++  IS=507.9E-15 BF=540.8 NF=1 VAF=100
++  IKF=3.031 ISE=3.816E-12 NE=1.270 BR=69.93
++  NR=1 VAR=100 IKR=27.97 ISC=626.5E-12
++  NC=3.197 RB=.15 NK=.6925
++  RE=0 RC=50.34E-3 EG=1.110
++  CJE=10.00E-12 VJE=.75 MJE=.33 TF=600.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=100.000E-9
+.ENDS
+*$
+* Motorola 400 Volt 50 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ10015   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 14.96
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 50
+R2 4 3 8
+.MODEL Dmodel D
++ IS=11.665E-12
++ N=3.4038
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=625
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=993.0E-18 BF=104.4 NF=1 VAF=100
++  IKF=.3882 ISE=387.2E-15 NE=1.372 BR=3.982
++  NR=1 VAR=100 IKR=13.46 ISC=197.3E-15
++  NC=1 RB=0.100134 NK=.5382
++  RE=0 RC=0.157858 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=60.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=1.540E-9
++  VJC=.35 MJC=.3287 XCJC=.9 FC=.5
++  TR=50.00E-5
+.MODEL Q2model NPN
++  IS=993.0E-18 BF=104.4 NF=1 VAF=100
++  IKF=.3882 ISE=387.2E-15 NE=1.372 BR=3.982
++  NR=1 VAR=100 IKR=13.46 ISC=197.3E-15
++  NC=1 RB=0.100134 NK=.5382
++  RE=0 RC=0.157858 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=60.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.35 MJC=.3287 XCJC=.9 FC=.5
++  TR=50.00E-5
+.ENDS
+*$
+* Motorola 200 Volt 60 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ10020   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 6.456
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 100
+R2 4 3 15
+.MODEL Dmodel D
++ IS=8.1946E-12
++ N=3.3012
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=312
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=94.11E-15 BF=431.2 NF=1 VAF=100
++  IKF=.9138 ISE=14.63E-12 NE=1.419 BR=1.085
++  NR=1 VAR=100 IKR=1.638 ISC=8.355E-9
++  NC=1.743 RB=0.322163 NK=.5678
++  RE=0 RC=0.117837 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=50.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=1.892E-9
++  VJC=.35 MJC=.4422 XCJC=.9 FC=.5
++  TR=1.75E-6
+.MODEL Q2model NPN
++  IS=94.11E-15 BF=431.2 NF=1 VAF=100
++  IKF=.9138 ISE=14.63E-12 NE=1.419 BR=1.085
++  NR=1 VAR=100 IKR=1.638 ISC=8.355E-9
++  NC=1.743 RB=0.322163 NK=.5678
++  RE=0 RC=0.117837 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=50.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.35 MJC=.4422 XCJC=.9 FC=.5
++  TR=1.75E-6
+.ENDS
+*$
+* Motorola 350 Volt 40 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ10022   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 10.03
+D1 3 1 Dmodel
+D2 4 2 Dmodel
+R1 2 4 100
+R2 4 3 15
+.MODEL Dmodel D
++ IS=11.665E-12
++ N=3.4038
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=500
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=904.3E-15 BF=114.2 NF=1 VAF=100
++  IKF=1.539 ISE=8.424E-12 NE=1.236 BR=61.20
++  NR=1 VAR=100 IKR=2.970 ISC=24.20E-9
++  NC=1.146 RB=0.260625 NK=.6049
++  RE=0 RC=0.213628 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=80.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=1.221E-9
++  VJC=.35 MJC=.4268 XCJC=.9 FC=.5
++  TR=2.75E-3
+.MODEL Q2model NPN
++  IS=904.3E-15 BF=114.2 NF=1 VAF=100
++  IKF=1.539 ISE=8.424E-12 NE=1.236 BR=61.20
++  NR=1 VAR=100 IKR=2.970 ISC=24.20E-9
++  NC=1.146 RB=0.260625 NK=.6049
++  RE=0 RC=0.213628 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=80.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.35 MJC=.4268 XCJC=.9 FC=.5
++  TR=2.75E-3
+.ENDS
+*$
+* Motorola 150 Volt 30 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ11018   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .5005
+D1 3 1 Dmodel
+R1 2 4 10.00E3
+R2 4 3 8
+.MODEL Dmodel D
++ IS=14.710E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=312
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=22.61E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=.2858 ISE=60.90E-12 NE=1.571 BR=34.58
++  NR=1 VAR=100 IKR=9.854 ISC=38.92E-12
++  NC=1.001 RB=0.202293 NK=.5632
++  RE=0 RC=0.0250371 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=70.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=971.6E-12
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=9.00E-6
+.MODEL Q2model NPN
++  IS=22.61E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=.2858 ISE=60.90E-12 NE=1.571 BR=34.58
++  NR=1 VAR=100 IKR=9.854 ISC=38.92E-12
++  NC=1.001 RB=0.202293 NK=.5632
++  RE=0 RC=0.0250371 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=70.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=9.00E-6
+.ENDS
+*$
+* Motorola 250 Volt 30 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJ11021   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .5003
+D1 1 3 Dmodel
+R1 4 2 10.00E3
+R2 4 3 8
+.MODEL Dmodel D
++ IS=14.710E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=312
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=11.17E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=.8575 ISE=204.3E-12 NE=1.549 BR=.4649
++  NR=1 VAR=100 IKR=10.01E-3 ISC=14.14E-12
++  NC=2.476 RB=0.198862 NK=.6127
++  RE=0 RC=0.0207466 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=22.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=971.6E-12
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=8.00E-6
+.MODEL Q2model PNP
++  IS=11.17E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=.8575 ISE=204.3E-12 NE=1.549 BR=.4649
++  NR=1 VAR=100 IKR=10.01E-3 ISC=14.14E-12
++  NC=2.476 RB=0.198862 NK=.6127
++  RE=0 RC=0.0207466 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=22.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=8.00E-6
+.ENDS
+*$
+* Motorola 100 Volt 2 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJD112    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .5
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=14.710E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=1.401E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=22.58E-3 ISE=5.356E-12 NE=1.428 BR=.1379
++  NR=1 VAR=100 IKR=15.57 ISC=1.583E-12
++  NC=2.997 RB=0.257987 NK=.4779
++  RE=0 RC=0.163225 EG=1.110
++  CJE=38.10E-12 VJE=.35 MJE=.3008 TF=12.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=42.29E-12
++  VJC=.9843 MJC=.1753 XCJC=.9 FC=.5
++  TR=2.20E-5
+.MODEL Q2model NPN
++  IS=1.401E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=22.58E-3 ISE=5.356E-12 NE=1.428 BR=.1379
++  NR=1 VAR=100 IKR=15.57 ISC=1.583E-12
++  NC=2.997 RB=0.257987 NK=.4779
++  RE=0 RC=0.163225 EG=1.110
++  CJE=38.10E-12 VJE=.35 MJE=.3008 TF=12.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.9843 MJC=.1753 XCJC=.9 FC=.5
++  TR=2.20E-5
+.ENDS
+*$
+* Motorola 100 Volt 2 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJD117    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.159
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=14.710E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=830.6E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=10.01E-3 ISE=1.431E-12 NE=1.456 BR=58.66
++  NR=1 VAR=100 IKR=5.461 ISC=907.1E-15
++  NC=2.997 RB=1.02909 NK=.4992
++  RE=0 RC=0.00100208 EG=1.110
++  CJE=48.81E-12 VJE=.9681 MJE=.4151 TF=7.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=110.4E-12
++  VJC=1.114 MJC=.2878 XCJC=.9 FC=.5
++  TR=50.00E-9
+.MODEL Q2model PNP
++  IS=830.6E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=10.01E-3 ISE=1.431E-12 NE=1.456 BR=58.66
++  NR=1 VAR=100 IKR=5.461 ISC=907.1E-15
++  NC=2.997 RB=1.02909 NK=.4992
++  RE=0 RC=0.00100208 EG=1.110
++  CJE=48.81E-12 VJE=.9681 MJE=.4151 TF=7.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=1.114 MJC=.2878 XCJC=.9 FC=.5
++  TR=50.00E-9
+.ENDS
+*$
+* Motorola 100 Volt 8 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJD122    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 3.805
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=38.627E-12
++ N=3.8049
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=54.03E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.5322 ISE=2.947E-12 NE=1.464 BR=.1191
++  NR=1 VAR=100 IKR=10.01E-3 ISC=54.03E-15
++  NC=1.006 RB=5.99377 NK=.7144
++  RE=0 RC=0.00101865 EG=1.110
++  CJE=106.7E-12 VJE=.6491 MJE=.456 TF=16.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=153.9E-12
++  VJC=.7977 MJC=.2174 XCJC=.9 FC=.5
++  TR=2.00E-5
+.MODEL Q2model NPN
++  IS=54.03E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.5322 ISE=2.947E-12 NE=1.464 BR=.1191
++  NR=1 VAR=100 IKR=10.01E-3 ISC=54.03E-15
++  NC=1.006 RB=5.99377 NK=.7144
++  RE=0 RC=0.00101865 EG=1.110
++  CJE=106.7E-12 VJE=.6491 MJE=.456 TF=16.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.7977 MJC=.2174 XCJC=.9 FC=.5
++  TR=2.00E-5
+.ENDS
+*$
+* Motorola 100 Volt 8 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJD127    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .5008
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=38.627E-12
++ N=3.8049
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=86.49E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.7241 ISE=1.023E-12 NE=1.388 BR=66.27
++  NR=1 VAR=100 IKR=12.30 ISC=456.3E-12
++  NC=1.001 RB=0.513037 NK=.635
++  RE=0 RC=0.00306723 EG=1.110
++  CJE=145.6E-12 VJE=.9688 MJE=.4056 TF=6.50E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=238.5E-12
++  VJC=1.500 MJC=.2431 XCJC=.9 FC=.5
++  TR=800.00E-5
+.MODEL Q2model PNP
++  IS=86.49E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.7241 ISE=1.023E-12 NE=1.388 BR=66.27
++  NR=1 VAR=100 IKR=12.30 ISC=456.3E-12
++  NC=1.001 RB=0.513037 NK=.635
++  RE=0 RC=0.00306723 EG=1.110
++  CJE=145.6E-12 VJE=.9688 MJE=.4056 TF=6.50E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=1.500 MJC=.2431 XCJC=.9 FC=.5
++  TR=800.00E-5
+.ENDS
+*$
+***********************************************************
+* MJD6036 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 12/17/97 at 15:54
+* Parts is a OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJD6036   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .2502
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model PNP
++  IS=1.653E-12 BF=1.266E3 NF=1 VAF=100
++  IKF=11.50E-3 ISE=2.216E-12 NE=2.090 BR=1.854
++  NR=1 VAR=100 IKR=4.942 ISC=2.138E-12
++  NC=2.818 RB=.2839 NK=.4306
++  RE=0 RC=0 EG=1.110
++  CJE=51.06E-12 VJE=.505 MJE=.3333 TF=1.8n
++  XTF=10 VTF=10 ITF=1 CJC=110.5E-12
++  VJC=1.014 MJC=.2851 XCJC=.9 FC=.5
++  TR=1.5u
+.MODEL Q2model PNP
++  IS=1.653E-12 BF=1.266E3 NF=1 VAF=100
++  IKF=11.50E-3 ISE=2.216E-12 NE=2.090 BR=1.854
++  NR=1 VAR=100 IKR=4.942 ISC=2.138E-12
++  NC=2.818 RB=.2839 NK=.4306
++  RE=0 RC=0 EG=1.110
++  CJE=51.06E-12 VJE=.505 MJE=.3333 TF=1.8n
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=1.014 MJC=.2851 XCJC=.9 FC=.5
++  TR=1.5u
+.ENDS
+*$
+* Motorola 80 Volt 4 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJD6039   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .5244
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=62.194E-12
++ N=3.9920
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=100
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=270.8E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.7753 ISE=437.8E-15 NE=1.263 BR=.1001
++  NR=1 VAR=100 IKR=10.01E-3 ISC=623.2E-15
++  NC=2.997 RB=0.336116 NK=.6489
++  RE=0 RC=0.00100742 EG=1.110
++  CJE=40.94E-12 VJE=1.172 MJE=.6816 TF=9.20E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=42.38E-12
++  VJC=.6269 MJC=.1465 XCJC=.9 FC=.5
++  TR=23.000E-6
+.MODEL Q2model PNP
++  IS=270.8E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.7753 ISE=437.8E-15 NE=1.263 BR=.1001
++  NR=1 VAR=100 IKR=10.01E-3 ISC=623.2E-15
++  NC=2.997 RB=0.336116 NK=.6489
++  RE=0 RC=0.00100742 EG=1.110
++  CJE=40.94E-12 VJE=1.172 MJE=.6816 TF=9.20E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.6269 MJC=.1465 XCJC=.9 FC=.5
++  TR=23.000E-6
+.ENDS
+*$
+* Motorola 100 Volt 5 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJF122    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.503
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=2.1341E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=168.8E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.313 ISE=822.5E-15 NE=1.313 BR=69.93
++  NR=1 VAR=100 IKR=27.46 ISC=190.0E-9
++  NC=3.197 RB=2.696 NK=.6883
++  RE=0 RC=0 EG=1.110
++  CJE=111.1E-12 VJE=.8322 MJE=.5028 TF=13.500E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=154.0E-12
++  VJC=.7507 MJC=.2122 XCJC=.9 FC=.5
++  TR=30.000E-9
+.MODEL Q2model NPN
++  IS=168.8E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.313 ISE=822.5E-15 NE=1.313 BR=69.93
++  NR=1 VAR=100 IKR=27.46 ISC=190.0E-9
++  NC=3.197 RB=2.696 NK=.6883
++  RE=0 RC=0 EG=1.110
++  CJE=111.1E-12 VJE=.8322 MJE=.5028 TF=13.500E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.7507 MJC=.2122 XCJC=.9 FC=.5
++  TR=30.000E-9
+.ENDS
+*$
+* Motorola 100 Volt 5 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJF127    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.523
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=2.1341E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=66.89E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.362 ISE=1.531E-12 NE=1.404 BR=4.456
++  NR=1 VAR=100 IKR=1.001E-3 ISC=66.89E-15
++  NC=1.025 RB=2.444 NK=.7378
++  RE=0 RC=0 EG=1.110
++  CJE=145.6E-12 VJE=.9688 MJE=.4056 TF=7.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=237.5E-12
++  VJC=2 MJC=.2772 XCJC=.9 FC=.5
++  TR=2.400E-6
+.MODEL Q2model PNP
++  IS=66.89E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.362 ISE=1.531E-12 NE=1.404 BR=4.456
++  NR=1 VAR=100 IKR=1.001E-3 ISC=66.89E-15
++  NC=1.025 RB=2.444 NK=.7378
++  RE=0 RC=0 EG=1.110
++  CJE=145.6E-12 VJE=.9688 MJE=.4056 TF=7.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=2 MJC=.2772 XCJC=.9 FC=.5
++  TR=2.400E-6
+.ENDS
+*$
+* Motorola 100 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJF6388   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.503
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=4.3887E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=168.8E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.313 ISE=822.5E-15 NE=1.313 BR=69.93
++  NR=1 VAR=100 IKR=27.46 ISC=190.0E-9
++  NC=3.197 RB=2.696 NK=.6883
++  RE=0 RC=0 EG=1.110
++  CJE=111.1E-12 VJE=.8322 MJE=.5028 TF=19.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=154.0E-12
++  VJC=.7507 MJC=.2122 XCJC=.9 FC=.5
++  TR=25.000E-9
+.MODEL Q2model NPN
++  IS=168.8E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.313 ISE=822.5E-15 NE=1.313 BR=69.93
++  NR=1 VAR=100 IKR=27.46 ISC=190.0E-9
++  NC=3.197 RB=2.696 NK=.6883
++  RE=0 RC=0 EG=1.110
++  CJE=111.1E-12 VJE=.8322 MJE=.5028 TF=19.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.7507 MJC=.2122 XCJC=.9 FC=.5
++  TR=25.000E-9
+.ENDS
+*$
+* Motorola 100 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJF6668   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.523
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=4.3887E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=66.89E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.362 ISE=1.531E-12 NE=1.404 BR=4.456
++  NR=1 VAR=100 IKR=1.001E-3 ISC=66.89E-15
++  NC=1.025 RB=2.444 NK=.7378
++  RE=0 RC=0 EG=1.110
++  CJE=179.5E-12 VJE=2 MJE=.7229 TF=15.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=221.3E-12
++  VJC=.136 MJC=.1836 XCJC=.9 FC=.5
++  TR=800.000E-9
+.MODEL Q2model PNP
++  IS=66.89E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=1.362 ISE=1.531E-12 NE=1.404 BR=4.456
++  NR=1 VAR=100 IKR=1.001E-3 ISC=66.89E-15
++  NC=1.025 RB=2.444 NK=.7378
++  RE=0 RC=0 EG=1.110
++  CJE=179.5E-12 VJE=2 MJE=.7229 TF=15.000E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.136 MJC=.1836 XCJC=.9 FC=.5
++  TR=800.000E-9
+.ENDS
+*$
+* Motorola 250 Volt 15 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJH11021  1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 20
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 50
+.MODEL Dmodel D
++ IS=6.7687E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=312
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=52.72E-15 BF=1.655E3 NF=1 VAF=100
++  IKF=.5202 ISE=696.1E-15 NE=1.294 BR=.3742
++  NR=1 VAR=100 IKR=9.675 ISC=98.81E-15
++  NC=1.924 RB=5.28724 NK=.6829
++  RE=0 RC=1.28027 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=15.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=1.457E-9
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=1.20E-5
+.MODEL Q2model PNP
++  IS=52.72E-15 BF=1.655E3 NF=1 VAF=100
++  IKF=.5202 ISE=696.1E-15 NE=1.294 BR=.3742
++  NR=1 VAR=100 IKR=9.675 ISC=98.81E-15
++  NC=1.924 RB=5.28724 NK=.6829
++  RE=0 RC=1.28027 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=15.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=1.20E-5
+.ENDS
+*$
+* Motorola 250 Volt 15 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJH11022  1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 49.31
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 50
+.MODEL Dmodel D
++ IS=6.7687E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=312
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=2.729E-12 BF=2.981E3 NF=1 VAF=100
++  IKF=.2653 ISE=134.2E-12 NE=1.491 BR=1.260
++  NR=1 VAR=100 IKR=.3295 ISC=1.803E-9
++  NC=1.581 RB=7.44366 NK=.6904
++  RE=0 RC=3.70092 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=67.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=971.6E-12
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=5000.00E-9
+.MODEL Q2model NPN
++  IS=2.729E-12 BF=2.981E3 NF=1 VAF=100
++  IKF=.2653 ISE=134.2E-12 NE=1.491 BR=1.260
++  NR=1 VAR=100 IKR=.3295 ISC=1.803E-9
++  NC=1.581 RB=7.44366 NK=.6904
++  RE=0 RC=3.70092 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=67.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=5000.00E-9
+.ENDS
+*$
+* Motorola 100 Volt 20 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJH6284   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 51.77
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 50
+.MODEL Dmodel D
++ IS=20.046E-12
++ N=3.5742
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=103.3E-15 BF=2.213E3 NF=1 VAF=100
++  IKF=1.127 ISE=1.858E-12 NE=1.310 BR=499.5
++  NR=1 VAR=100 IKR=10.81 ISC=402.6E-9
++  NC=2.997 RB=8.73339 NK=.8134
++  RE=0 RC=1.64889 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=11.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=971.6E-12
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=23.0E-9
+.MODEL Q2model NPN
++  IS=103.3E-15 BF=2.213E3 NF=1 VAF=100
++  IKF=1.127 ISE=1.858E-12 NE=1.310 BR=499.5
++  NR=1 VAR=100 IKR=10.81 ISC=402.6E-9
++  NC=2.997 RB=8.73339 NK=.8134
++  RE=0 RC=1.64889 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=11.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=23.0E-9
+.ENDS
+*$
+* Motorola 100 Volt 20 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MJH6287   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.140
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 50
+.MODEL Dmodel D
++ IS=20.046E-12
++ N=3.5742
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=277.1E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=1.763 ISE=7.961E-12 NE=1.410 BR=5.213
++  NR=1 VAR=100 IKR=9.136 ISC=34.73E-12
++  NC=1.144 RB=.4787 NK=.636
++  RE=0 RC=0 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=11.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=1.457E-9
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=8.00E-6
+.MODEL Q2model PNP
++  IS=277.1E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=1.763 ISE=7.961E-12 NE=1.410 BR=5.213
++  NR=1 VAR=100 IKR=9.136 ISC=34.73E-12
++  NC=1.144 RB=.4787 NK=.636
++  RE=0 RC=0 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=11.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=8.00E-6
+.ENDS
+*$
+***********************************************************
+* MPSA14 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 01/07/98 at 09:47
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MPSA14    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 2.873
+D1 3 1 Dmodel
+R1 2 4 200.0E6
+R2 4 3 200.0E6
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model NPN
++  IS=53.12E-15 BF=540.5 NF=1 VAF=100
++  IKF=.3345 ISE=77.22E-15 NE=1.366 BR=.6588
++  NR=1 VAR=100 IKR=2.639 ISC=907.4E-15
++  NC=2.069 RB=1.610 NK=.9051
++  RE=0 RC=0 EG=1.110
++  CJE=12.06E-12 VJE=.7315 MJE=.3308 TF=500.0E-12
++  XTF=10 VTF=10 ITF=1 CJC=14.32E-12
++  VJC=.35 MJC=.2845 XCJC=.9 FC=.5
++  TR=500.0E-12
+.MODEL Q2model NPN
++  IS=53.12E-15 BF=540.5 NF=1 VAF=100
++  IKF=.3345 ISE=77.22E-15 NE=1.366 BR=.6588
++  NR=1 VAR=100 IKR=2.639 ISC=907.4E-15
++  NC=2.069 RB=1.610 NK=.9051
++  RE=0 RC=0 EG=1.110
++  CJE=12.06E-12 VJE=.7315 MJE=.3308 TF=500.0E-12
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.35 MJC=.2845 XCJC=.9 FC=.5
++  TR=500.0E-12
+.ENDS
+*$
+***********************************************************
+* MPSA27 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 12/16/97 at 10:33
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MPSA27    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 5.065
+D1 3 1 Dmodel
+R1 2 4 200.0E6
+R2 4 3 200.0E6
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model NPN
++  IS=40.40E-15 BF=219.3 NF=1 VAF=100
++  IKF=96.69E-3 ISE=141.3E-15 NE=1.998 BR=.5214
++  NR=1 VAR=100 IKR=2.718 ISC=40.40E-15
++  NC=1.832 RB=6.455 NK=.7098
++  RE=0 RC=0 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=10.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=2.000E-12
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=10.00E-9
+.MODEL Q2model NPN
++  IS=40.40E-15 BF=219.3 NF=1 VAF=100
++  IKF=96.69E-3 ISE=141.3E-15 NE=1.998 BR=.5214
++  NR=1 VAR=100 IKR=2.718 ISC=40.40E-15
++  NC=1.832 RB=6.455 NK=.7098
++  RE=0 RC=0 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=10.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=10.00E-9
+.ENDS
+*$
+***********************************************************
+* MPSA29 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 12/16/97 at 14:00
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MPSA29    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.34423
+D1 3 1 Dmodel
+R1 2 4 2G
+R2 4 3 2G
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model NPN
++  IS=4.111167e-014 BF=281.471 NF=1 VAF=100
++  IKF=109.993m ISE=3.834296e-014 NE=1.40463 BR=6.25795
++  NR=1 VAR=100 IKR=1.99539 ISC=1.000000e-013
++  NC=2.6833 RB=0.999997 NK=0.641521
++  RE=0 RC=3.16053 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=1.10E-9
++  XTF=10 VTF=10 ITF=1 CJC=12.15E-12
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=10.00E-9
+.MODEL Q2model NPN
++  IS=4.111167e-014 BF=281.471 NF=1 VAF=100
++  IKF=109.993m ISE=3.834296e-014 NE=1.40463 BR=6.25795
++  NR=1 VAR=100 IKR=1.99539 ISC=1.000000e-013
++  NC=2.6833 RB=0.999997 NK=0.641521
++  RE=0 RC=3.16053 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=1.10E-9
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.75 MJC=.3333 XCJC=.9 FC=.5
++  TR=10.00E-9
+.ENDS
+*$
+***********************************************************
+* MPSA64 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 01/07/98 at 15:06
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MPSA64    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 0.807561
+*D1 1 3 Dmodel
+R1 2 4 2G
+R2 4 3 2G
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model PNP
++  IS=1.152217e-014 BF=295.916 NF=1 VAF=100
++  IKF=4.152566e-001 ISE=1.018001e-013 NE=1.54779 BR=1.91325
++  NR=1 VAR=100 IKR=0.358632 ISC=1.81264p
++  NC=1.26296 RB=5.62906 NK=0.8621
++  RE=0 RC=1.78532 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=1n
++  XTF=10 VTF=10 ITF=1 CJC=2.000E-12
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=1n
+.MODEL Q2model PNP
++  IS=1.152217e-014 BF=295.916 NF=1 VAF=100
++  IKF=4.152566e-001 ISE=1.018001e-013 NE=1.54779 BR=1.91325
++  NR=1 VAR=100 IKR=0.358632 ISC=1.81264p
++  NC=1.26296 RB=5.62906 NK=0.8621
++  RE=0 RC=1.78532 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=1n
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=1n
+.ENDS
+*$
+***********************************************************
+* MPSA77 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 01/13/98 at 10:42
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT MPSA77    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 4.004
+D1 1 3 Dmodel
+R1 2 4 100.0E6
+R2 4 3 100.0E6
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model PNP
++  IS=9.656E-15 BF=273.8 NF=1 VAF=100
++  IKF=81.86E-3 ISE=1.419E-12 NE=1.998 BR=69.08
++  NR=1 VAR=100 IKR=.3535 ISC=51.69E-12
++  NC=1.300 RB=1.814 NK=.8466
++  RE=0 RC=26.32E-3 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=10.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=2.000E-12
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=10.00E-9
+.MODEL Q2model PNP
++  IS=9.656E-15 BF=273.8 NF=1 VAF=100
++  IKF=81.86E-3 ISE=1.419E-12 NE=1.998 BR=69.08
++  NR=1 VAR=100 IKR=.3535 ISC=51.69E-12
++  NC=1.300 RB=1.814 NK=.8466
++  RE=0 RC=26.32E-3 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=10.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=10.00E-9
+.ENDS
+*$
+* Motorola 80 Volt 4 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6036   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .5004
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=1.6978E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=100
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=1.587E-12 BF=1.998E3 NF=1 VAF=100
++  IKF=32.99E-3 ISE=2.716E-12 NE=1.457 BR=1.166
++  NR=1 VAR=100 IKR=19.91 ISC=1.656E-12
++  NC=2.997 RB=.1999 NK=.5185
++  RE=0 RC=0 EG=1.110
++  CJE=48.81E-12 VJE=1.332 MJE=.492 TF=2.0E-9
++  XTF=10 VTF=10 ITF=1 CJC=109.5E-12
++  VJC=1.147 MJC=.3068 XCJC=.9 FC=.5
++  TR=2.400E-6
+.MODEL Q2model PNP
++  IS=1.587E-12 BF=1.998E3 NF=1 VAF=100
++  IKF=32.99E-3 ISE=2.716E-12 NE=1.457 BR=1.166
++  NR=1 VAR=100 IKR=19.91 ISC=1.656E-12
++  NC=2.997 RB=.1999 NK=.5185
++  RE=0 RC=0 EG=1.110
++  CJE=48.81E-12 VJE=1.332 MJE=.492 TF=2.0E-9
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=1.147 MJC=.3068 XCJC=.9 FC=.5
++  TR=2.400E-6
+.ENDS
+*$
+* Motorola 80 Volt 4 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6039   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 2.101
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=1.6978E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=80
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=582.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=11.32E-3 ISE=4.878E-12 NE=1.501 BR=1.124
++  NR=1 VAR=100 IKR=1.594 ISC=8.343E-12
++  NC=1.546 RB=3.264 NK=.4559
++  RE=0 RC=.1 EG=1.110
++  CJE=37.75E-12 VJE=.7939 MJE=.4134 TF=13.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=54.30E-12
++  VJC=.1 MJC=.1414 XCJC=.9 FC=.5
++  TR=2.650E-6
+.MODEL Q2model NPN
++  IS=582.5E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=11.32E-3 ISE=4.878E-12 NE=1.501 BR=1.124
++  NR=1 VAR=100 IKR=1.594 ISC=8.343E-12
++  NC=1.546 RB=3.264 NK=.4559
++  RE=0 RC=.1 EG=1.110
++  CJE=37.75E-12 VJE=.7939 MJE=.4134 TF=13.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.1 MJC=.1414 XCJC=.9 FC=.5
++  TR=2.650E-6
+.ENDS
+*$
+***********************************************************
+* Q2N6040 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 12/18/97 at 15:06
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6040   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 3.76047
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model PNP
++  IS=219.582f BF=329.769 NF=1 VAF=100
++  IKF=0.185339 ISE=14.6688p NE=1.58277 BR=2.34372
++  NR=1 VAR=100 IKR=12.1336u ISC=100f
++  NC=2 RB=7.77763 NK=0.544311
++  RE=0 RC=1.14368 EG=1.110
++  CJE=145.6E-12 VJE=1.010 MJE=.4187 TF=1.8n
++  XTF=10 VTF=10 ITF=1 CJC=245.9E-12
++  VJC=1.500 MJC=.2688 XCJC=.9 FC=.5
++  TR=11u
+.MODEL Q2model PNP
++  IS=219.582f BF=329.769 NF=1 VAF=100
++  IKF=0.185339 ISE=14.6688p NE=1.58277 BR=2.34372
++  NR=1 VAR=100 IKR=12.1336u ISC=100f
++  NC=2 RB=7.77763 NK=0.544311
++  RE=0 RC=1.14368 EG=1.110
++  CJE=145.6E-12 VJE=1.010 MJE=.4187 TF=1.8n
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=1.500 MJC=.2688 XCJC=.9 FC=.5
++  TR=11u
+.ENDS
+*$
+* Motorola 100 Volt 8 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6045   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 2.867
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=3.4721E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=239.7E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=.9942 ISE=4.097E-12 NE=1.405 BR=69.93
++  NR=1 VAR=100 IKR=27.97 ISC=3.243E-12
++  NC=3.197 RB=4.107 NK=.743
++  RE=0 RC=.1885 EG=1.110
++  CJE=111.8E-12 VJE=.5941 MJE=.4082 TF=10.5E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=153.6E-12
++  VJC=.8197 MJC=.2079 XCJC=.9 FC=.5
++  TR=35.00E-9
+.MODEL Q2model NPN
++  IS=239.7E-15 BF=1.199E3 NF=1 VAF=100
++  IKF=.9942 ISE=4.097E-12 NE=1.405 BR=69.93
++  NR=1 VAR=100 IKR=27.97 ISC=3.243E-12
++  NC=3.197 RB=4.107 NK=.743
++  RE=0 RC=.1885 EG=1.110
++  CJE=111.8E-12 VJE=.5941 MJE=.4082 TF=10.5E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.8197 MJC=.2079 XCJC=.9 FC=.5
++  TR=35.00E-9
+.ENDS
+*$
+* Motorola 100 Volt 12 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6052   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .99
+D1 1 3 Dmodel
+R1 2 4 5.000E3
+R2 4 3 50
+.MODEL Dmodel D
++ IS=5.3253E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=1.500E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=.263 ISE=6.747E-12 NE=1.413 BR=499.5
++  NR=1 VAR=100 IKR=19.98 ISC=19.59E-12
++  NC=2.997 RB=1.0845 NK=.5779
++  RE=0 RC=0.196311 EG=1.110
++  CJE=316.6E-12 VJE=.436 MJE=.2878 TF=9.781E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=372.5E-12
++  VJC=1.177 MJC=.2738 XCJC=.9 FC=.5
++  TR=7.561E-9
+.MODEL Q2model PNP
++  IS=1.500E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=.263 ISE=6.747E-12 NE=1.413 BR=499.5
++  NR=1 VAR=100 IKR=19.98 ISC=19.59E-12
++  NC=2.997 RB=1.0845 NK=.5779
++  RE=0 RC=0.196311 EG=1.110
++  CJE=316.6E-12 VJE=.436 MJE=.2878 TF=9.781E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=1.177 MJC=.2738 XCJC=.9 FC=.5
++  TR=7.561E-9
+.ENDS
+*$
+* Motorola 80 Volt 8 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6056   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 14.69
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 50
+.MODEL Dmodel D
++ IS=3.4721E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=100
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=147.1E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=97.05E-3 ISE=2.395E-12 NE=1.434 BR=.1001
++  NR=1 VAR=100 IKR=23.88E-3 ISC=175.6E-15
++  NC=2.129 RB=13.15 NK=.6333
++  RE=0 RC=1.92 EG=1.110
++  CJE=112.5E-12 VJE=.5439 MJE=.4105 TF=18.16E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=154.3E-12
++  VJC=.7209 MJC=.2047 XCJC=.9 FC=.5
++  TR=20.00E-6
+.MODEL Q2model NPN
++  IS=147.1E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=97.05E-3 ISE=2.395E-12 NE=1.434 BR=.1001
++  NR=1 VAR=100 IKR=23.88E-3 ISC=175.6E-15
++  NC=2.129 RB=13.15 NK=.6333
++  RE=0 RC=1.92 EG=1.110
++  CJE=112.5E-12 VJE=.5439 MJE=.4105 TF=18.16E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.7209 MJC=.2047 XCJC=.9 FC=.5
++  TR=20.00E-6
+.ENDS
+*$
+* Motorola 100 Volt 12 Amp Darlington Transistor  07/20/98
+
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6059   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .9912
+D1 3 1 Dmodel
+R1 2 4 5.000E3
+R2 4 3 50
+.MODEL Dmodel D
++ IS=5.3253E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=1.501E-12 BF=772.1 NF=1 VAF=100
++  IKF=.1298 ISE=163.8E-12 NE=1.998 BR=499.5
++  NR=1 VAR=100 IKR=19.98 ISC=1.536E-12
++  NC=2.997 RB=1.101 NK=.5077
++  RE=0 RC=.1498 EG=1.110
++  CJE=316.6E-12 VJE=.436 MJE=.2878 TF=16.416E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=189.3E-12
++  VJC=.6244 MJC=.1866 XCJC=.9 FC=.5
++  TR=13.837E-9
+.MODEL Q2model NPN
++  IS=1.501E-12 BF=772.1 NF=1 VAF=100
++  IKF=.1298 ISE=163.8E-12 NE=1.998 BR=499.5
++  NR=1 VAR=100 IKR=19.98 ISC=1.536E-12
++  NC=2.997 RB=1.101 NK=.5077
++  RE=0 RC=.1498 EG=1.110
++  CJE=316.6E-12 VJE=.436 MJE=.2878 TF=16.416E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.6244 MJC=.1866 XCJC=.9 FC=.5
++  TR=13.837E-9
+.ENDS
+*$
+* Motorola 100 Volt 20 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6284   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 19.85
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=9.2795E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=67.42E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.184 ISE=2.229E-12 NE=1.428 BR=.3524
++  NR=1 VAR=100 IKR=.6861 ISC=121.3E-15
++  NC=2.103 RB=9.09874 NK=.6286
++  RE=0 RC=1.19619 EG=1.110
++  CJE=342.5E-12 VJE=.4481 MJE=.3214 TF=30.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=358.0E-12
++  VJC=.35 MJC=.1722 XCJC=.9 FC=.5
++  TR=10.00E-6
+.MODEL Q2model NPN
++  IS=67.42E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.184 ISE=2.229E-12 NE=1.428 BR=.3524
++  NR=1 VAR=100 IKR=.6861 ISC=121.3E-15
++  NC=2.103 RB=9.09874 NK=.6286
++  RE=0 RC=1.19619 EG=1.110
++  CJE=342.5E-12 VJE=.4481 MJE=.3214 TF=30.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.35 MJC=.1722 XCJC=.9 FC=.5
++  TR=10.00E-6
+.ENDS
+*$
+* Motorola 100 Volt 20 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6287   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 3.863
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=9.2795E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=275.6E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.1272 ISE=1.410E-12 NE=1.391 BR=499.5
++  NR=1 VAR=100 IKR=6.893 ISC=36.57E-9
++  NC=2.997 RB=3.9565 NK=.5516
++  RE=0 RC=0.47444 EG=1.110
++  CJE=514.3E-12 VJE=1.500 MJE=.4866 TF=10.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=597.5E-12
++  VJC=1.169 MJC=.2985 XCJC=.9 FC=.5
++  TR=7.00E-9
+.MODEL Q2model PNP
++  IS=275.6E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.1272 ISE=1.410E-12 NE=1.391 BR=499.5
++  NR=1 VAR=100 IKR=6.893 ISC=36.57E-9
++  NC=2.997 RB=3.9465 NK=.5516
++  RE=0 RC=0.47444 EG=1.110
++  CJE=514.3E-12 VJE=1.500 MJE=.4866 TF=10.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=1.169 MJC=.2985 XCJC=.9 FC=.5
++  TR=7.00E-9
+.ENDS
+*$
+* Motorola 80 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6388   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 51.68
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=4.3887E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=100
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=42.84E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=59.85E-3 ISE=4.314E-12 NE=1.533 BR=499.5
++  NR=1 VAR=100 IKR=19.98 ISC=48.97E-15
++  NC=2.214 RB=47.351 NK=.6554
++  RE=0 RC=5.19381 EG=1.110
++  CJE=111.3E-12 VJE=.746 MJE=.4688 TF=17.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=158.6E-12
++  VJC=.9897 MJC=.2358 XCJC=.9 FC=.5
++  TR=7.00E-9
+.MODEL Q2model NPN
++  IS=42.84E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=59.85E-3 ISE=4.314E-12 NE=1.533 BR=499.5
++  NR=1 VAR=100 IKR=19.98 ISC=48.97E-15
++  NC=2.214 RB=47.351 NK=.6554
++  RE=0 RC=5.19381 EG=1.110
++  CJE=111.3E-12 VJE=.746 MJE=.4688 TF=17.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.9897 MJC=.2358 XCJC=.9 FC=.5
++  TR=7.00E-9
+.ENDS
+*$
+***********************************************************
+* Q2N6427 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 12/15/97 at 09:54
+* Parts is an OrCAD product.
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6427   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 16.99
+D1 3 1 Dmodel
+R1 2 4 100.0E6
+R2 4 3 100.0E6
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model NPN
++  IS=24.54E-15 BF=406.8 NF=1 VAF=100
++  IKF=24.59E-3 ISE=2.293E-12 NE=1.863 BR=.3049
++  NR=1 VAR=100 IKR=3.694 ISC=29.43E-15
++  NC=2.090 RB=5.116 NK=.6437
++  RE=0 RC=8.500E-3 EG=1.110
++  CJE=13.11E-12 VJE=.35 MJE=.2881 TF=10.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=14.74E-12
++  VJC=.35 MJC=.2929 XCJC=.9 FC=.5
++  TR=10.00E-9
+.MODEL Q2model NPN
++  IS=24.54E-15 BF=406.8 NF=1 VAF=100
++  IKF=24.59E-3 ISE=2.293E-12 NE=1.863 BR=.3049
++  NR=1 VAR=100 IKR=3.694 ISC=29.43E-15
++  NC=2.090 RB=5.116 NK=.6437
++  RE=0 RC=8.500E-3 EG=1.110
++  CJE=13.11E-12 VJE=.35 MJE=.2881 TF=10.00E-9
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=.35 MJC=.2929 XCJC=.9 FC=.5
++  TR=10.00E-9
+.ENDS
+*$
+* Motorola 80 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT Q2N6667   1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 5.886
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=4.3887E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=100
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=72.35E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.3179 ISE=1.475E-12 NE=1.391 BR=.1001
++  NR=1 VAR=100 IKR=1.546 ISC=72.35E-15
++  NC=1.677 RB=6.11834 NK=.6572
++  RE=0 RC=0.136604 EG=1.110
++  CJE=177.9E-12 VJE=.4582 MJE=.2338 TF=19.10E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=205.6E-12
++  VJC=.6795 MJC=.2498 XCJC=.9 FC=.5
++  TR=3.0E-6
+.MODEL Q2model PNP
++  IS=72.35E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.3179 ISE=1.475E-12 NE=1.391 BR=.1001
++  NR=1 VAR=100 IKR=1.546 ISC=72.35E-15
++  NC=1.677 RB=6.11834 NK=.6572
++  RE=0 RC=0.136604 EG=1.110
++  CJE=177.9E-12 VJE=.4582 MJE=.2338 TF=19.10E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.6795 MJC=.2498 XCJC=.9 FC=.5
++  TR=3.0E-6
+.ENDS
+*$
+* Motorola 100 Volt 8 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT TIP102    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 19.61
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=3.4721E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=209.2E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=71.77E-3 ISE=4.744E-12 NE=1.447 BR=36.63
++  NR=1 VAR=100 IKR=.4299 ISC=1.630E-12
++  NC=1.002 RB=27.3662 NK=.5871
++  RE=0 RC=3.26784 EG=1.110
++  CJE=111.8E-12 VJE=.5941 MJE=.4082 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=160.1E-12
++  VJC=.5399 MJC=.1963 XCJC=.9 FC=.5
++  TR=13.00E-6
+.MODEL Q2model NPN
++  IS=209.2E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=71.77E-3 ISE=4.744E-12 NE=1.447 BR=36.63
++  NR=1 VAR=100 IKR=.4299 ISC=1.630E-12
++  NC=1.002 RB=27.3662 NK=.5871
++  RE=0 RC=3.26784 EG=1.110
++  CJE=111.8E-12 VJE=.5941 MJE=.4082 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.5399 MJC=.1963 XCJC=.9 FC=.5
++  TR=13.00E-6
+.ENDS
+*$
+* Motorola 100 Volt 8 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT TIP107    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 27.60
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=3.4721E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=980.0E-18 BF=2.997E3 NF=1 VAF=100
++  IKF=64.27E-3 ISE=216.1E-15 NE=1.502 BR=.1001
++  NR=1 VAR=100 IKR=10.01E-3 ISC=988.9E-15
++  NC=2.997 RB=19.6609 NK=.6613
++  RE=0 RC=3.83074 EG=1.110
++  CJE=145.4E-12 VJE=1.500 MJE=.4942 TF=8.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=239.7E-12
++  VJC=1.498 MJC=.252 XCJC=.9 FC=.5
++  TR=18.00E-6
+.MODEL Q2model PNP
++  IS=980.0E-18 BF=2.997E3 NF=1 VAF=100
++  IKF=64.27E-3 ISE=216.1E-15 NE=1.502 BR=.1001
++  NR=1 VAR=100 IKR=10.01E-3 ISC=988.9E-15
++  NC=2.997 RB=19.6609 NK=.6613
++  RE=0 RC=3.83074 EG=1.110
++  CJE=145.4E-12 VJE=1.500 MJE=.4942 TF=8.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=1.498 MJC=.252 XCJC=.9 FC=.5
++  TR=18.00E-6
+.ENDS
+*$
+* Motorola 100 Volt 2 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT TIP112    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .5
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=3.4721E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=1.961E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=10.01E-3 ISE=4.706E-12 NE=1.428 BR=.1954
++  NR=1 VAR=100 IKR=7.974 ISC=2.203E-12
++  NC=2.997 RB=0.100825 NK=.4507
++  RE=0 RC=0.167214 EG=1.110
++  CJE=38.29E-12 VJE=.35 MJE=.321 TF=12.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=41.23E-12
++  VJC=1.162 MJC=.1636 XCJC=.9 FC=.5
++  TR=1.00E-5
+.MODEL Q2model NPN
++  IS=1.961E-12 BF=2.997E3 NF=1 VAF=100
++  IKF=10.01E-3 ISE=4.706E-12 NE=1.428 BR=.1954
++  NR=1 VAR=100 IKR=7.974 ISC=2.203E-12
++  NC=2.997 RB=0.100825 NK=.4507
++  RE=0 RC=0.167214 EG=1.110
++  CJE=38.29E-12 VJE=.35 MJE=.321 TF=12.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=1.162 MJC=.1636 XCJC=.9 FC=.5
++  TR=1.00E-5
+.ENDS
+*$
+* Motorola 100 Volt 2 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT TIP117    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 19.07
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 60
+.MODEL Dmodel D
++ IS=3.4721E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=42.45E-15 BF=707.4 NF=1 VAF=100
++  IKF=10.01E-3 ISE=55.78E-15 NE=1.998 BR=.1001
++  NR=1 VAR=100 IKR=10.61 ISC=907.3E-15
++  NC=2.997 RB=7.69995 NK=.545
++  RE=0 RC=0.00100321 EG=1.110
++  CJE=46.60E-12 VJE=.35 MJE=.2506 TF=8.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=106.0E-12
++  VJC=1.330 MJC=.3062 XCJC=.9 FC=.5
++  TR=4.00E-5
+.MODEL Q2model PNP
++  IS=42.45E-15 BF=707.4 NF=1 VAF=100
++  IKF=10.01E-3 ISE=55.78E-15 NE=1.998 BR=.1001
++  NR=1 VAR=100 IKR=10.61 ISC=907.3E-15
++  NC=2.997 RB=7.69995 NK=.545
++  RE=0 RC=0.00100321 EG=1.110
++  CJE=46.60E-12 VJE=.35 MJE=.2506 TF=8.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=1.330 MJC=.3062 XCJC=.9 FC=.5
++  TR=4.00E-5
+.ENDS
+*$
+* Motorola 100 Volt 5 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT TIP122    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 19.61
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=2.1341E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=209.2E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=71.77E-3 ISE=4.744E-12 NE=1.447 BR=36.63
++  NR=1 VAR=100 IKR=.4299 ISC=1.630E-12
++  NC=1.002 RB=27.3662 NK=.5871
++  RE=0 RC=3.26784 EG=1.110
++  CJE=111.8E-12 VJE=.5941 MJE=.4082 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=160.1E-12
++  VJC=.5399 MJC=.1963 XCJC=.9 FC=.5
++  TR=12.00E-6
+.MODEL Q2model NPN
++  IS=209.2E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=71.77E-3 ISE=4.744E-12 NE=1.447 BR=36.63
++  NR=1 VAR=100 IKR=.4299 ISC=1.630E-12
++  NC=1.002 RB=27.3662 NK=.5871
++  RE=0 RC=3.26784 EG=1.110
++  CJE=111.8E-12 VJE=.5941 MJE=.4082 TF=18.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.5399 MJC=.1963 XCJC=.9 FC=.5
++  TR=12.00E-6
+.ENDS
+*$
+***********************************************************
+* TIP127 Darlington Transistor "macromodel" subcircuit
+* created using Parts release 8.1 on 01/09/98 at 15:34
+* Parts is an OrCAD product.
+* Macromodel valid for TIP127, TIP128, and TIP129
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT TIP127    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 1.008
+D1 1 3 Dmodel
+R1 2 4 7.200E3
+R2 4 3 120
+.MODEL Dmodel D
++ IS=10.00E-15 RS=1.000E-3 N=1 XTI=3
++  CJO=10.00E-21 VJ=1 M=.5 FC=.5
+.MODEL Q1model PNP
++  IS=57.28E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=1.511 ISE=1.049E-12 NE=1.386 BR=.1021
++  NR=1 VAR=100 IKR=4.319 ISC=9.571E-12
++  NC=1.517 RB=1.347 NK=.7332
++  RE=0 RC=.1061 EG=1.110
++  CJE=145.6E-12 VJE=.9672 MJE=.4056 TF=2100p
++  XTF=10 VTF=10 ITF=1 CJC=232.7E-12
++  VJC=1.500 MJC=.244 XCJC=.9 FC=.5
++  TR=14.0E-6
+.MODEL Q2model PNP
++  IS=57.28E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=1.511 ISE=1.049E-12 NE=1.386 BR=.1021
++  NR=1 VAR=100 IKR=4.319 ISC=9.571E-12
++  NC=1.517 RB=1.347 NK=.7332
++  RE=0 RC=.1061 EG=1.110
++  CJE=145.6E-12 VJE=.9672 MJE=.4056 TF=2100p
++  XTF=10 VTF=10 ITF=1 CJC=0
++  VJC=1.500 MJC=.244 XCJC=.9 FC=.5
++  TR=14.0E-6
+.ENDS
+*$
+* Motorola 100 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT TIP142    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model .6286
+D1 3 1 Dmodel
+R1 2 4 8.000E3
+R2 4 3 40
+.MODEL Dmodel D
++ IS=4.3887E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model NPN
++  IS=1.605E-12 BF=745.1 NF=1 VAF=100
++  IKF=.3592 ISE=3.554E-9 NE=1.998 BR=.1018
++  NR=1 VAR=100 IKR=2.814 ISC=3.257E-12
++  NC=2.370 RB=0.159612 NK=.4489
++  RE=0 RC=0.106336 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=23.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=2.000E-12
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=1.50E-6
+.MODEL Q2model NPN
++  IS=1.605E-12 BF=745.1 NF=1 VAF=100
++  IKF=.3592 ISE=3.554E-9 NE=1.998 BR=.1018
++  NR=1 VAR=100 IKR=2.814 ISC=3.257E-12
++  NC=2.370 RB=0.159612 NK=.4489
++  RE=0 RC=0.106336 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=23.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=1.50E-6
+.ENDS
+*$
+* Motorola 100 Volt 10 Amp Darlington Transistor  07/20/98
+*
+* connections:    Collector
+*                 |  Base
+*                 |  |  Emitter
+*                 |  |  |
+.SUBCKT TIP147    1  2  3
+*
+Q1 1 2 4 Q1model
+Q2 1 4 3 Q2model 5.131
+D1 1 3 Dmodel
+R1 2 4 8.000E3
+R2 4 3 40
+.MODEL Dmodel D
++ IS=4.3887E-12
++ N=3.4748
++ RS=1.0000E-3
++ CJO=1.0000E-12
++ M=.3333
++ VJ=.75
++ ISR=100.00E-12
++ BV=120
++ IBV=1.00E-6
++ TT=5.0000E-9
+.MODEL Q1model PNP
++  IS=350.7E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.7028 ISE=20.45E-12 NE=1.522 BR=.1001
++  NR=1 VAR=100 IKR=4.029 ISC=21.47E-9
++  NC=1.562 RB=5.07314 NK=.7315
++  RE=0 RC=0.00101053 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=15.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=2.000E-12
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=8.00E-5
+.MODEL Q2model PNP
++  IS=350.7E-15 BF=2.997E3 NF=1 VAF=100
++  IKF=.7028 ISE=20.45E-12 NE=1.522 BR=.1001
++  NR=1 VAR=100 IKR=4.029 ISC=21.47E-9
++  NC=1.562 RB=5.07314 NK=.7315
++  RE=0 RC=0.00101053 EG=1.110
++  CJE=2.000E-12 VJE=.75 MJE=.33 TF=15.00E-9
++  XTF=1 VTF=10 ITF=10.00E-3 CJC=0
++  VJC=.75 MJC=.33 XCJC=.9 FC=.5
++  TR=8.00E-5
+.ENDS
+*$

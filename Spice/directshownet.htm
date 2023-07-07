@@ -1,0 +1,646 @@
+<!DOCTYPE HTML>
+
+
+<html lang="en">
+<head>
+
+	
+	<link rel="preconnect" href="https://apps.developermedia.com">
+	<link rel="preconnect" href="https://cdn1.developermedia.com">
+	<link rel="preconnect" href="https://cdn.ampproject.org">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://ajax.googleapis.com">
+	<link rel="preconnect" href="https://adservice.google.com">
+	<link rel="preconnect" href="https://www.googletagservices.com">
+	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+	<link rel="preconnect" href="https://codeproject.freetls.fastly.net">
+
+
+	<link rel="preload" href="https://codeproject.freetls.fastly.net/App_Themes/CodeProject/Img/logo250x135.gif" as="image">
+
+
+	<link rel="preload" href="/App_Themes/CodeProject/Img/logo135-bg.gif" as="image">
+	<link rel="preload" href="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js" as="script" type="text/javascript" >
+
+<title>File Download - CodeProject</title><link type="text/css" rel="stylesheet" href="https://codeproject.freetls.fastly.net/App_Themes/CodeProject/Css/Main.min.css?dt=2.8:2023-03-27:1">
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js" defer ></script>
+<script type="text/javascript" src="https://codeproject.freetls.fastly.net/script/JS/standard.min.js?dt=2.8:2023-03-27:1" defer ></script>
+<script type="text/javascript" src="/a.min.js?v=1.3" defer ></script>
+
+<meta http-equiv="content-language" content="en-US">
+<meta charset="UTF-8">
+<meta name="Description" content="File Download - Free source code and tutorials for Software developers and Architects.; Updated: 30 Apr 2023">
+<meta name="Keywords" content="Free source code, tutorials">
+<meta name="Author" content="CodeProject">
+<meta name="Rating" content="General">
+<meta name="Revisit-After" content="1 days">
+<meta name="application-name" content="CodeProject">
+<meta name="google-translate-customization" content="d908bb7ce7aff658-4c2f3a504525c916-g629383f736781a8a-13">
+
+<link rel="dns-prefetch" href="//ajax.googleapis.com"> 
+<link rel="canonical" href="https://www.codeproject.com" />
+
+<link rel="alternate" type="application/rss+xml" title="CodeProject Latest articles - All Topics" href="https://www.codeproject.com/WebServices/ArticleRSS.aspx?cat=1" />
+<link rel="alternate" type="application/rss+xml" title="CodeProject Latest articles - Python" href="https://www.codeproject.com/WebServices/ArticleRSS.aspx?cat=34" />
+<link rel="alternate" type="application/rss+xml" title="CodeProject Lounge Postings" href="https://www.codeproject.com/webservices/LoungeRSS.aspx" />
+<meta name="robots" content="index, follow" />
+
+<link rel="search" type="application/opensearchdescription+xml" title="CodeProject" href="https://www.codeproject.com/info/OpenSearch.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-touch-icon.png"> 
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"> 
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"> 
+<link rel="manifest" href="/favicon/manifest.json"> 
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff9900"><base target="_top" ><meta http-equiv="refresh" content="2; url=/script/Articles/Download.aspx?file=/KB/directx/directshownet/directshownet.zip&amp;rp=https://www.codeproject.com/" />
+
+
+<script type='text/javascript'>
+function defrm () { /* thanks twitter */
+    document.write = '';
+    window.top.location = window.self.location;
+    setTimeout(function() { document.body.innerHTML = ''; }, 0);
+    window.self.onload = function(evt) { document.body.innerHTML = ''; };
+}
+
+if (window.top !== window.self) {
+    try {
+        if (window.top.location.host) { /* will throw for all except chrome */ }
+        else { defrm(); /* chrome */ }
+    } catch (ex) { defrm(); /* everyone else */ }
+}
+
+// Specific case where a site is screwing with us.
+if (typeof(DemoUrl) !== 'undefined') {
+    document.write(unescape('%3Cme') + 'ta http' + '-equiv="re' + 'fresh con' +
+                           'tent="1;url=' + DemoUrl + unescape('"%3CE'));
+}
+</script>
+
+
+
+
+
+    <script async type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-YZNPNQ0F2S"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZNPNQ0F2S' , {'user_id': 'a9517473-61f1-4d2f-86fa-9c529b3110f4'});
+    </script>
+</head>
+
+<body class="chrome chrome109" >
+
+	
+
+
+
+<a class="access-link" href="#Main"><img alt="Click here to Skip to main content" src="https://codeproject.freetls.fastly.net/images/t.gif" /></a>
+
+    <div class="page-background">
+
+	
+	<div id="ctl00_STM" class="site-top-menu fixed">
+		<div class="main-content">
+			
+
+<div class="container memberbar clearfix flex-container flex-extend">
+
+	<div id="ctl00_MemberBar_GenInfo" class="flex-item align-left">15,640,480 members</div>
+
+	<div class="flex-item">
+		
+	</div>
+
+	<div class="flex-item align-right">
+
+		
+
+		<span id="ctl00_MemberBar_ReadLaterList_ReadLaterListDiv" class="tooltip member-message">
+	<span ID="ReadLaterListIcon" class="readlaterlist-count openable hidden"></span>
+	<div class="tooltip-flyout readlaterlist-dropdown">
+		<div id="ItemsToRead" class="readlaterlist-list"></div>
+	</div>
+</span><span id="ctl00_MemberBar_TotalPoints" title="Total reputation points"><a class="bold member-rep-box bronze" title="Reputation points earned: 359" href="/script/Reputation/List.aspx?mid=15992152">359</a></span><span id="ctl00_MemberBar_CurRat" class="member-links tooltip openable">
+				<a id="ctl00_MemberBar_MyProfile" class="me desktop-only tablet-only" dir="ltr" href="/Members/User-15954992">animevietsub</a>
+                <a id="ctl00_MemberBar_MyProfileMob" class="me mobile-only" href="/Members/User-15954992">☰</a>
+                <div class="tooltip-flyout">
+					
+					<div class="list-item"><a id="ctl00_MemberBar_MySettingsDefault" href="https://www.codeproject.com/script/Membership/Modify.aspx">My Settings</a></div>
+					<div class="list-item"><a id="ctl00_MemberBar_MyBookmarks" href="/script/Bookmarks/List.aspx?obtid=2">My Bookmarks</a></div>
+					<div class="list-item"><a id="ctl00_MemberBar_MyArticles" href="/script/Articles/MemberArticles.aspx?amid=15992152">My Articles</a></div>
+					<div class="list-item"><a id="ctl00_MemberBar_MyMessages" href="/script/Forums/Messages.aspx?fmid=15992152">My Messages</a></div>
+					<div class="list-item"><a id="ctl00_MemberBar_MyQuestions" href="/script/Answers/MemberPosts.aspx?tab=questions&amp;amp;mid=15992152&amp;amp;showall=True">My Questions</a></div>
+					<div class="list-item"><a id="ctl00_MemberBar_MyAnswers" href="/script/Answers/MemberPosts.aspx?tab=answers&amp;amp;mid=15992152&amp;amp;showall=True">My Answers</a></div>
+					<div class="list-item"><a id="ctl00_MemberBar_MyComments" href="/script/comments/MemberComments.aspx?mid=15992152">My Comments</a></div>
+					
+					
+					<div id="ctl00_MemberBar_MyFollowingHolder">
+					    <div class="list-item"><a id="ctl00_MemberBar_MyFollowing" href="/script/follow/Edit.aspx">Things I Follow</a></div>
+					    <div class="list-item"><a id="ctl00_MemberBar_MyFollowers" href="/script/follow/Followers.aspx">My Followers</a></div>
+					</div>
+					
+        
+					<form name="unsubForm" id="unsubForm" action="/script/Membership/LogOff.aspx?rp=%2fKB%2fdirectx%2fdirectshownet%2fdirectshownet.zip" method="post"
+						class="tight">
+                    <input type='hidden' name='AntiForgeryToken' value='753e139f-a104-4254-84f3-213db3339f23' />
+                    <input type="submit" value="Sign out" class="list-item border-none extended align-left" onclick="return doSignout();"
+                        style="background-color: transparent; color: #999; cursor:pointer" />
+                    
+                    </form>
+
+                    <script type="text/javascript">//<!--
+			        function doSignout()
+			        {
+    			        document.unsubForm.action = "/script/Membership/LogOff.aspx?rp=%2fKB%2fdirectx%2fdirectshownet%2fdirectshownet.zip"
+				        document.unsubForm.submit();
+				        return true;
+			        }//-->
+			        </script>
+                    
+				</div>
+			</span>
+
+		
+	</div>
+</div>
+		</div>
+	</div>
+
+	
+	<div id="ctl00_SH" class="site-header fixed">
+		<div class="main-content">
+			<div class="logo"><a href="/"><img id="ctl00_Logo" tabindex="1" title="CodeProject" src="https://codeproject.freetls.fastly.net/App_Themes/CodeProject/Img/logo250x135.gif" alt="Home" style="height:135px;width:250px;border-width:0px;" /></a></div>
+			<div class="promo"><div class="msg-728x90" data-format="728x90" data-type="ad" data-publisher="lqm.codeproject.site" data-zone="ros"  data-country='US' data-tags='.NET1.0; Win2K; WinXP; VS.NET2002; C#; Windows; .NET; Visual-Studio; Dev; Advanced,pos_top'><noscript><a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/ros&sz=728x90&c=11336"><img src="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/ros&sz=728x90&c=11336"  width="728px" height="90px" target="_blank"/></a></noscript></div></div>
+		</div>
+	</div>
+
+	
+	<div id="ctl00_TPR" class="sub-headerbar flex-container flex-extend flex-extend fixed">
+		<div class="flex-item" style="min-width:20rem">
+			
+
+<div class="navbar clearfix">
+<ul class="navmenu openable">
+
+<li class="desktop-only"><a id="ctl00_TopNavBar_Home" href="https://www.codeproject.com">home</a>
+
+
+<li class="openable"><a id="ctl00_TopNavBar_Art" class="down" href="/script/Articles/Latest.aspx">articles</a>
+
+	<ul>
+		<li class="openable"><a id="ctl00_TopNavBar_ArtTopicList" class="fly" onmouseover="navBarMenu.ShowMap(this, &#39;ctl00_TopNavBar_MapFlyout&#39;);" href="/script/Content/SiteMap.aspx">Browse Topics<span class="has-submenu">&gt;</span></a><ul id="ctl00_TopNavBar_MapFlyout" class="taxonomy">
+			<li>
+				<div id="siteMap"></div>
+			</li>
+			</ul>
+		</li>
+		<li><a id="ctl00_TopNavBar_ArtLatestArts" class="fly" href="/script/Articles/Latest.aspx">Latest Articles</a></li>
+		<li><a id="ctl00_TopNavBar_ArtTop" class="fly" href="/script/Articles/TopArticles.aspx?ta_so=5">Top Articles</a></li>
+		<li><a id="ctl00_TopNavBar_ArtGuide" class="fly" href="/info/Submit.aspx">Posting/Update Guidelines</a></li>
+		<li><a id="ctl00_TopNavBar_ArtHelpForum" class="fly" href="/Forums/1641/Article-Writing">Article Help Forum</a></li>
+		<li><a id="ctl00_TopNavBar_ArtPostArticle" class="fly highlight1" href="/script/Articles/Submit.aspx">
+			<img src="https://codeproject.freetls.fastly.net/images/write13.png" width="13" height="13" /> Submit an article or tip
+			</a></li>
+        
+		<li><a id="ctl00_TopNavBar_ArtImportGitHub" class="fly highlight3" href="/script/Articles/ImportArticle.aspx">
+			<img src="https://codeproject.freetls.fastly.net/images/write13.png" width="13" height="13" /> Import GitHub Project
+			</a></li>
+        
+		<li><a id="ctl00_TopNavBar_ArtPostBlog" class="fly highlight2" href="/script/Articles/BlogFeed.aspx">
+			<img src="https://codeproject.freetls.fastly.net/images/write13.png" width="13" height="13" /> Import your Blog
+			</a></li>		
+        
+        <li class="last"></li>
+	</ul>
+
+</li>
+
+
+
+<li class="openable">
+<a id="ctl00_TopNavBar_Answers" href="/script/Answers/List.aspx?tab=active">
+    <span class="desktop-only tablet-only">quick answers</span><span class="mobile-only">Q&amp;A</span>
+</a>
+	<ul>
+		
+
+		<li><a id="ctl00_TopNavBar_QAAsk" class="fly highlight2" href="/Questions/ask.aspx"><img 
+			src="https://codeproject.freetls.fastly.net/images/write13.png" width="13" height="13" /> Ask a Question</a></li>
+
+		<li><a id="ctl00_TopNavBar_QAUnanswered" class="fly" href="/script/Answers/List.aspx?tab=unanswered">View Unanswered Questions</a></li>
+		<li><a id="ctl00_TopNavBar_QALatest" class="fly" href="/script/Answers/List.aspx?tab=active">View All Questions</a></li>
+        
+				<li><a id="ctl00_TopNavBar_QATR_ctl00_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=81" style="padding-left:30px">View C# questions</a></li>
+			
+				<li><a id="ctl00_TopNavBar_QATR_ctl01_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=87" style="padding-left:30px">View Javascript questions</a></li>
+			
+				<li><a id="ctl00_TopNavBar_QATR_ctl02_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=268" style="padding-left:30px">View Python questions</a></li>
+			
+				<li><a id="ctl00_TopNavBar_QATR_ctl03_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=78" style="padding-left:30px">View C++ questions</a></li>
+			
+				<li><a id="ctl00_TopNavBar_QATR_ctl04_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=91" style="padding-left:30px">View Java questions</a></li>
+			
+    
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+
+
+<li class="openable"><a id="ctl00_TopNavBar_Forums" href="/script/Forums/List.aspx">
+        <span class="desktop-only tablet-only">discussions</span><span class="mobile-only">forums</span>
+</a>
+
+	<ul>
+		<li><a id="ctl00_TopNavBar_CodeProjectAI" class="fly" href="/Feature/CodeProjectAI-Discussions.aspx">CodeProject.AI Server</a></li>
+		<li><a id="ctl00_TopNavBar_MessageBoardsAll" class="fly" href="/script/Forums/List.aspx">All Message Boards...</a></li>
+		<li class="openable"><a class="fly" style="padding-left:30px" href="/Forums/1580997/Application-Lifecycle">Application Lifecycle<span class="has-submenu">&gt;</span></a>
+<ul class="openable"><li><a class="fly" href="/Forums/1533717/Running-a-Business">Running a Business</a></li>
+<li><a class="fly" href="/Forums/1533716/Sales-Marketing">Sales / Marketing</a></li>
+<li><a class="fly" href="/Forums/1651/Collaboration-Beta-Testing">Collaboration / Beta Testing</a></li>
+<li><a class="fly" href="/Forums/3304/Work-Issues">Work  Issues</a></li>
+</ul></li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/369270/Design-and-Architecture">Design and Architecture</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1969389/Artificial-Intelligence">Artificial Intelligence</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/12076/ASP-NET">ASP.NET</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1580226/JavaScript">JavaScript</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1969388/Internet-of-Things">Internet of Things</a>
+</li>
+<li class="openable"><a class="fly" style="padding-left:30px" href="/Forums/1647/C-Cplusplus-MFC">C / C++ / MFC<span class="has-submenu">&gt;</span></a>
+<ul class="openable"><li><a class="fly" href="/Forums/4486/ATL-WTL-STL">ATL /  WTL / STL</a></li>
+<li><a class="fly" href="/Forums/3785/Managed-Cplusplus-CLI">Managed C++/CLI</a></li>
+</ul></li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1649/Csharp">C#</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1627782/Free-Tools">Free Tools</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1827460/Objective-C-and-Swift">Objective-C and Swift</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1725/Database">Database</a>
+</li>
+<li class="openable"><a class="fly" style="padding-left:30px" href="/Forums/186301/Hardware-Devices">Hardware &amp; Devices<span class="has-submenu">&gt;</span></a>
+<ul class="openable"><li><a class="fly" href="/Forums/1644/System-Admin">System Admin</a></li>
+</ul></li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1606152/Hosting-and-Servers">Hosting and Servers</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1643/Java">Java</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1942421/Linux-Programming">Linux Programming</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1988311/Python">Python</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1650/NET-Core-and-Framework">.NET (Core and Framework)</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1848626/Android">Android</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1876716/iOS">iOS</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/13695/Mobile">Mobile</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1004257/WPF">WPF</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1646/Visual-Basic">Visual Basic</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1640/Web-Development">Web Development</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/suggestions.aspx">Site Bugs / Suggestions</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1652005/Spam-and-Abuse-Watch">Spam and Abuse Watch</a>
+</li>
+
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+<li class="openable"><a id="ctl00_TopNavBar_Features" href="/Feature/">
+      <span class="desktop-only tablet-only">features</span><span class="mobile-only">features</span>
+</a>
+
+	<ul>
+		<li><a id="ctl00_TopNavBar_Comps" class="fly" href="/script/Contests/CurrentCompetitions.aspx?cmpTpId=3&amp;amp;awsac=true">Competitions</a></li>
+        
+		<li><a id="ctl00_TopNavBar_News" class="fly" href="/script/News/List.aspx">News</a></li>
+		<li><a id="ctl00_TopNavBar_Insider" class="fly" href="/Feature/Insider/">The Insider Newsletter</a></li>
+    	<li><a id="ctl00_TopNavBar_DailyBuild" class="fly" href="/Feature/DailyBuild">The Daily Build Newsletter</a></li>
+		<li><a id="ctl00_TopNavBar_Newsletters" class="fly" href="/script/Mailouts/Archive.aspx?mtpid=1">Newsletter archive</a></li>
+		<li><a id="ctl00_TopNavBar_Surveys" class="fly" href="/script/Surveys/List.aspx">Surveys</a></li>
+		
+        
+		<li><a id="ctl00_TopNavBar_Stuff" class="fly" href="/Info/Stuff.aspx">CodeProject Stuff</a></li>
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+
+<li  class="openable"><a id="ctl00_TopNavBar_Lounge" href="/Lounge.aspx">
+            <span class="desktop-only tablet-only">community</span><span class="mobile-only">lounge</span>
+</a>
+
+	<ul>
+		<li><a id="ctl00_TopNavBar_WhosWho" class="fly" href="/script/Membership/Profiles.aspx">Who's Who</a></li>
+		<li><a id="ctl00_TopNavBar_MVPs" class="fly break" href="/script/Contests/Winners.aspx?obtid=1&amp;amp;cmpTpId=2&amp;amp;cid=0">Most Valuable Professionals</a></li>
+
+		<li><a id="ctl00_TopNavBar_LoungeLnk" class="fly highlight2" href="/Lounge.aspx">The Lounge  </a></li>
+		<li><a id="ctl00_TopNavBar_SiteBlog" class="fly break" href="/Members/CodeProject#_comments">The CodeProject Blog</a></li>
+
+		<li><a id="ctl00_TopNavBar_WhereAmILink" class="fly" href="/Forums/1939564/Where-I-am-Member-Photos">Where I Am: Member Photos</a></li>
+		<li><a id="ctl00_TopNavBar_InsiderLnk" class="fly" href="/Insider.aspx">The Insider News</a></li>
+		<li><a id="ctl00_TopNavBar_WeirdWonderful" class="fly" href="/Feature/WeirdAndWonderful.aspx">The Weird & The Wonderful</a></li>
+
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+
+<li class="openable" style="margin-left:20px"><a id="ctl00_TopNavBar_Help" href="/KB/FAQs/">
+    <span class="desktop-only tablet-only">help</span><span class="mobile-only">?</span>
+</a>
+
+
+	<ul>
+		<li><a id="ctl00_TopNavBar_HelpWhatIs" class="fly" href="/info/guide.aspx">What is 'CodeProject'?</a></li>
+		<li><a id="ctl00_TopNavBar_HelpGeneral" class="fly break" href="/KB/FAQs/">General FAQ</a></li>
+		<li><a id="ctl00_TopNavBar_HelpPostQuestion" class="fly break highlight2" href="/Questions/ask.aspx">Ask a Question</a></li>
+		<li><a id="ctl00_TopNavBar_HelpBugs" class="fly" href="/suggestions.aspx">Bugs and Suggestions</a></li>
+		<li><a id="ctl00_TopNavBar_HelpArticles" class="fly" href="/Forums/1641/Article-Writing">Article Help Forum</a></li>
+		
+		
+		
+		
+		<li><a id="ctl00_TopNavBar_HelpAboutUs" class="fly" href="/info/about.aspx">About Us</a></li>
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+</ul>
+
+</div>
+		</div>
+		<div class="flex-item-tight align-right">
+			
+
+<div class="searchbar">
+
+<form method="get" action="/search.aspx?sbo=kw" name="Search" class="tight">
+
+
+<table border="0" cellspacing="0" cellpadding="0" class="search"><tr><td><input TabIndex="2" class="search " id="sb_tb" autocomplete="off" value="" name="q" /></td><td><input type="image" src="https://codeproject.freetls.fastly.net/images/search.gif" /></td></tr></table>
+
+<div class="hover-container">
+	<div id="SearchFilter" class="search-advanced popup small-text align-left">
+	<b>Search within:<br /></b>
+		
+		<input type="radio" id="sb_kw" name="sbo" value="kw" checked="checked"><label for="sb_kw">Articles</label><br>
+<input type="radio" id="sb_qa" name="sbo" value="qa"><label for="sb_qa">Quick Answers</label><br>
+<input type="radio" id="sb_fm" name="sbo" value="fm"><label for="sb_fm">Messages</label><br>
+
+
+		
+		
+
+		
+		
+	</div>
+</div>
+</form>
+
+</div>
+		</div>
+		<div class="sub-headerbar-divider"></div>
+	</div>		
+	
+
+	<div id="C" class="container-content-wrap fixed"> 
+		<div class="container-content">
+
+			<div class="container-breadcrumb">
+			
+			</div>
+
+			
+			<div id="ctl00_ContentPane" class="container-main">
+
+				<div class="flex-container flex-extend">
+
+					
+					
+					
+
+					
+					<div style="min-height:600px" class="flex-item">
+
+						<a name="Main"></a>
+
+						
+						<h1>File Download</h1>
+
+						
+						
+
+						
+						
+
+
+        <p>Downloading "directshownet.zip" from the article 
+        <a id="ctl00_MC_ArticleLink" href="/Articles/2615/DirectShow-NET">DirectShow.NET</a>. 
+
+        
+        Please note that downloads for this article are governed by the 
+        <a id="ctl00_MC_LicenseLink" href="http://creativecommons.org/licenses/publicdomain/" style="font-weight:bold;">A Public Domain dedication</a>. 
+        
+
+        If the download doesn't start please <a id="ctl00_MC_DirectLink" href="/script/Articles/Download.aspx?file=/KB/directx/directshownet/directshownet.zip&amp;amp;rp=https://www.codeproject.com/">click here</a>.</p>
+
+    
+
+
+
+<table id="ctl00_MC_AdBlock" class="float-center" cellspacing="20" style="margin-top:50px">
+	<tr valign="middle">
+		<td>
+		<div class="msg-300x250" data-format="300x250" data-type="ad" data-publisher="lqm.codeproject.site" data-zone="download"  data-country='US' data-tags='.NET1.0; Win2K; WinXP; VS.NET2002; C#; Windows; .NET; Visual-Studio; Dev; Advanced'><noscript><a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/download&sz=300x250&c=11336"><img src="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/download&sz=300x250&c=11336"  width="300px" height="250px" target="_blank"/></a></noscript></div>
+	</td>
+		<td>
+		<div class="msg-300x250" data-format="300x250" data-type="ad" data-publisher="lqm.codeproject.site" data-zone="download"  data-country='US' data-tags='.NET1.0; Win2K; WinXP; VS.NET2002; C#; Windows; .NET; Visual-Studio; Dev; Advanced'><noscript><a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/download&sz=300x250&c=11336"><img src="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/download&sz=300x250&c=11336"  width="300px" height="250px" target="_blank"/></a></noscript></div>
+	</td>
+	</tr>
+</table>
+
+
+
+
+<p><a id="ctl00_MC_ReturnLink" href="/Articles/2615/DirectShow-NET">Return to article</a>.</p>
+
+
+						
+						
+
+						<br clear="all" />
+					</div>
+
+					
+					
+
+				</div>
+
+				<div class="theme1-background padded-top padded-bottom bottom-promo">
+					<div class="msg-728x90" data-format="728x90" data-type="ad" data-publisher="lqm.codeproject.site" data-zone="ros"  data-country='US' data-loadOnView='true'  data-tags='.NET1.0; Win2K; WinXP; VS.NET2002; C#; Windows; .NET; Visual-Studio; Dev; Advanced,pos_bottom'><noscript><a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/ros&sz=728x90&c=11336"><img src="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/ros&sz=728x90&c=11336"  width="728px" height="90px" target="_blank"/></a></noscript></div>
+				</div>
+
+				<div class="site-footer">
+					<div class="align-left">
+						<a id="ctl00_AdvertiseLink" href="http://developermedia.com/">Advertise </a><br>
+						<a id="ctl00_PrivacyLink" href="/info/privacy.aspx">Privacy</a><br>
+   						<a id="ctl00_CookiePolicyLink" href="/info/cookie.aspx">Cookies</a><br>
+						<a id="ctl00_TermsOfUseLink" href="/info/TermsOfUse.aspx">Terms of Use</a><br>
+						Last Updated 30 Apr 2023
+					</div>
+
+					<div class="align-center">
+						
+
+
+<div class="page-width">
+    Layout: <a id="ctl00_PageWidth_FixedT" title="Fixed width layout" rel="nofollow" class=" active" href="/KB/directx/directshownet/directshownet.zip?PageFlow=FixedWidth">fixed</a>
+    |
+    <a id="ctl00_PageWidth_FluidT" title="Fluid layout" rel="nofollow" href="/KB/directx/directshownet/directshownet.zip?PageFlow=Fluid">fluid</a>
+</div>
+
+
+						
+					</div>
+
+					<div class="align-right">
+						Copyright &copy; <a href="mailto:webmaster@codeproject.com">CodeProject</a>, 1999-2023 <br />
+						All Rights Reserved.<br>
+						<br>
+						Web03
+						2.8:2023-03-27:1<br>
+					</div>
+				</div>
+
+				<br clear="all" />
+
+				
+
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+
+	
+
+</div>
+<div id="page-bottom"></div>
+
+
+
+<script type="text/javascript"> // IMMEDIATE script
+
+var readLaterList;
+</script>
+
+<script type="text/javascript"> // DEFERRED script
+
+document.addEventListener('DOMContentLoaded', function() {
+
+	$('#__EVENTVALIDATION').attr('autocomplete', 'off');
+	
+	MicroModal.init();
+	
+	readLaterList = new ReadLaterList('ReadLaterListIcon', 'ItemsToRead','/script/Bookmarks/WebServices/BookmarkService.aspx','https://codeproject.freetls.fastly.net/App_Themes/CodeProject/Img/','/script/Bookmarks/Ajax/Add.aspx?obrfgd=%5bObjectRefGuid%5d&bis=small',true);
+	readLaterList.initialise();
+	
+	var oSrchFlt = false, oSrchBox=false, srchBoxFoc=false;
+	var sbar     = $('#sb_tb');
+	var sfilter  = $('#SearchFilter');
+	
+	if (typeof(InitWatermark) !== 'undefined')
+	  InitWatermark('sb_tb', 'Search for articles, questions, tips');
+	if (sbar && sfilter) {
+	  sfilter.removeClass('popup'); sfilter.hide(); sfilter.removeClass('open');
+	  sbar.blur(function() {
+	    if (!oSrchFlt) { sfilter.hide(); sfilter.removeClass('open'); }
+	    srchBoxFoc = false;
+	  });
+	  sbar.focus(function() {
+	    oSrchFlt   = false;
+	    srchBoxFoc = true;
+	    sfilter.show();
+	    sfilter.addClass('open');
+	  });
+	  sbar.mouseleave(function()    { oSrchBox = false; });
+	  sbar.mouseover(function()     { oSrchBox = true; });
+	  sfilter.mouseleave(function() {
+	    oSrchFlt=false;
+	    if (!srchBoxFoc && !oSrchBox) { sfilter.hide(); sfilter.removeClass('open'); }
+	  });
+	  sfilter.mouseover(function()  { oSrchFlt = true; });
+	}
+	
+	cookieconsent.initialise({
+	                                    enabled : true,
+	                                    cookie  : { domain: 'codeproject.com' },
+	                                    palette : {
+	                                        popup: { background: '#ff9900' },
+	                                        button: { background: '#f5d948' }
+	                                    },
+	                                    law :  {
+	                                        showForAllRegions : true, 
+	                                        countryCode : 'US' 
+	                                    },
+	                                    theme: 'edgeless',
+	                                    type : 'opt-in-out',
+	                                    content: {
+	                                        message: 'Like every other website we use cookies. By using our site you acknowledge that you have read and understand our <a href=\'/info/cookie.aspx\'>Cookie Policy</a>, <a href=\'/info/privacy.aspx\'>Privacy Policy</a>, and our <a href=\'/info/TermsOfUse.aspx\'>Terms of Service</a>.',
+	                                        href:    'https://www.codeproject.com/info/privacy.aspx',
+	                                        dismiss: 'Ask me later'
+	                                    },
+	                                    revokable:true,
+	                                    onStatusChange: function(status) {
+	                                        $.ajax({
+	                                		    dataType  : 'json',
+	                                            data: JSON.stringify({ allowCookies : this.hasConsented() }),
+	                                            url: '/script/membership/webservices/LoggedOnMemberservices.aspx/SetCookieConsent',
+	                                            cache: false,
+	                                            type: 'POST',
+	                                            contentType: 'application/json'
+	                                        })
+	                                        console.log(this.hasConsented() ? 'enable cookies' : 'disable cookies');
+	                                        console.log(this.hasAnswered() ? 'has answered' : 'did not answer');
+	                                    },
+	                                });
+
+})
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

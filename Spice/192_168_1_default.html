@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+<meta http-equiv="Pragma" content="no-cache" />
+<title></title>
+<script language="JavaScript" type="text/javascript">
+var SSLPort ='443';
+var SSLHostIp ='192\x2e168\x2e1\x2e1';
+var HostInfo = window.location.host.replace(/\[|]/g,'');
+var IsMaintWan = '0';
+if (IsMaintWan == 1)
+{
+SSLPort = '7017';
+}
+
+function IsIPv6AddressUshortValid(Short)
+{
+    if (Short.length > 4)
+    {
+        return false;
+    }
+    
+    for (var i = 0; i < Short.length; i++)
+    {
+        var Char = Short.charAt(i);
+        if (!((Char >= '0' && Char <= '9') || (Char >= 'a' && Char <= 'f') || (Char >= 'A' && Char <= 'F')))
+        {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+function IsStandardIPv6AddressValid(Address)
+{
+    if ((Address.charAt(0) == ':') || (Address.charAt(Address.length-1) == ':'))
+    {
+        return false;
+    }    
+    
+    List = Address.split(":");
+    if (List.length > 8)
+    {
+        return false;
+    }
+
+    for (var i = 0; i < List.length; i++)
+    {
+        if (false == IsIPv6AddressUshortValid(List[i]))
+        {
+            return false;
+        }
+    }    
+    
+    return true;   
+}
+
+function IsIPv6AddressValid(Address)
+{
+    if (Address == "::")
+    {
+        return true;
+    }
+
+    if (Address.length < 3)
+    {
+        return false;
+    }
+
+    var List = Address.split("::");
+    if (List.length > 2)
+    {
+        return false;
+    }
+    
+    if (List.length == 1)
+    if (Address.split(":").length != 8)
+    {
+        return false;
+    }
+    
+    if (List.length > 1)
+    if (Address.split(":").length > 8)
+    {
+        return false;
+    }
+
+    List = Address.split("::");
+    for (var i = 0; i < List.length; i++)
+    {
+        if (false == IsStandardIPv6AddressValid(List[i]))
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+function LoadFrame()
+{
+var lastindex = HostInfo.lastIndexOf(":");
+if(-1 == lastindex)
+{
+/* host string not include ":", just ipv4 addr */
+window.location="https://" + HostInfo + ":" + SSLPort;
+}
+else
+{
+var List = HostInfo.split(":");
+if(List.length >= 3)
+{
+/* include two or more than two ":" */
+if(true == IsIPv6AddressValid(HostInfo))
+{
+/* host string not include port */
+window.location="https://[" + HostInfo + "]:" + SSLPort;
+}
+else
+{
+var newipv6addr = HostInfo.substr(0,lastindex);
+var newipv6port = HostInfo.substr(lastindex+1);
+if (IsMaintWan == 0)
+{
+window.location="https://[" + newipv6addr + "]:" + SSLPort;
+}
+else
+{
+window.location="https://[" + newipv6addr + "]:" + newipv6port;
+}
+}
+}
+else
+{
+/* just one ":" */
+var newipv4addr = HostInfo.substr(0,lastindex);
+if (IsMaintWan == 0)
+{
+window.location="https://" + newipv4addr + ":" + SSLPort;
+}
+else
+{
+window.location="https://" + HostInfo;
+}
+}
+}
+}
+</script>
+</head>
+<body class="mainbody" onLoad="LoadFrame();"> 
+</body>
+</html>

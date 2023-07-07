@@ -1,0 +1,115 @@
+**************************************
+*       MY CUSTOM TRANSFORMERS       *
+*      Made by VoHaoHao - TheKey     *
+**************************************
+*Transformer Subcircuit Parameters
+*RATIO1 = Turns ratio= Secondary1/Primary
+*RATIO2 = Turns ratio= Secondary2/Primary
+*RATIO3 = Turns ratio= Secondary3/Primary
+*RATIO4 = Turns ratio= Secondary4/Primary
+*RPRI   = Primary DC resistance
+*R2D    = Secondary1 leakage resistance referred to the primary side
+*R3D    = Secondary2 leakage resistance referred to the primary side
+*R4D    = Secondary3 leakage resistance referred to the primary side
+*R5D    = Secondary3 leakage resistance referred to the primary side
+*L1     = Primary Leakage inductance
+*XM     = Magnetizing Reactance
+*RCORE  = Core Loss Resistance
+*X2D   = Secondary1 Leakage Reactance referred to the primary side
+*X3D   = Secondary2 Leakage Reactance referred to the primary side
+*X4D   = Secondary3 Leakage Reactance referred to the primary side
+*X5D   = Secondary4 Leakage Reactance referred to the primary side
+
+*Non-ideal 1P5S
+*Connections:
+*                   Pri+
+*                   |   Pri-
+*                   |   |   S1+
+*                   |   |   |   S1-
+*                   |   |   |   |   S2+
+*                   |   |   |   |   |   S2-
+*                   |   |   |   |   |   |   S3+
+*                   |   |   |   |   |   |   |   S3-
+*                   |   |   |   |   |   |   |   |   S4+
+*                   |   |   |   |   |   |   |   |   |   S4-
+.SUBCKT NI1P5STRANS PP  PN  S1  S2  S3  S4  S5  S6  S7  S8 PARAMS: RATIO1=1 RATIO2=1 RATIO3=1 RATIO4=1 RPRI=0.1 R2D=0.1 R3D=0.1 R4D=0.1 R5D=0.1 L1=1U
++ X2D=1u X3D=1u X4D=1u X5D=1u XM=1k RCORE=1Meg
+
+VISRC1   S2 13 0V
+VISRC2   S4 16 0V
+VISRC3   S6 19 0V 
+VISRC4   S8 22 0V
+FCTRL1   12 PN VISRC1 {RATIO1}
+FCTRL2   15 PN VISRC2 {RATIO2}
+FCTRL3   18 PN VISRC3 {RATIO3}
+FCTRL4   21 PN VISRC4 {RATIO4}
+EVCVS1   S1 13 12 PN {RATIO1}
+EVCVS2   S3 16 15 PN {RATIO2}
+EVCVS3   S5 19 18 PN {RATIO3}
+EVCVS4   S7 22 21 PN {RATIO4}
+RRPRI    PP 10 {RPRI}
+RR2D    11 12 {R2D}
+RR3D    14 15 {R3D}
+RR4D    17 18 {R4D}
+RR5D    20 21 {R5D}
+LL1   10 9 {L1}
+LX2D  9 11 {X2D}
+LX3D  9 14 {X3D}
+LX4D  9 17 {X4D}
+LX5D  9 20 {X5D}
+LXM   9 PN {XM}
+RRCORE 9 PN {RCORE}
+
+.ENDS NI1P5STRANS
+
+*Non-ideal 1P7S
+*Connections:
+*                   Pri+
+*                   |   Pri-
+*                   |   |   S1+
+*                   |   |   |   S1-
+*                   |   |   |   |   S2+
+*                   |   |   |   |   |   S2-
+*                   |   |   |   |   |   |   S3+
+*                   |   |   |   |   |   |   |   S3-
+*                   |   |   |   |   |   |   |   |   S4+
+*                   |   |   |   |   |   |   |   |   |   S4- S5+ S5- S6+ S6-
+.SUBCKT NI1P7STRANS PP  PN  S1  S2  S3  S4  S5  S6  S7  S8  S9  S10 S11 S12 PARAMS: RATIO1=1 RATIO2=1 RATIO3=1 RATIO4=1 RATIO5=1 RATIO6=1 RPRI=0.1 R2D=0.1 R3D=0.1 R4D=0.1 R5D=0.1 R6D=0.1 R7D=0.1 L1=1U
++ X2D=1u X3D=1u X4D=1u X5D=1u X6D=1u X7D=1u XM=1k RCORE=1Meg
+
+VISRC1   S2 13 0V
+VISRC2   S4 16 0V
+VISRC3   S6 19 0V
+VISRC4   S8 22 0V
+VISRC4   S10 25 0V
+VISRC4   S12 28 0V
+FCTRL1   12 PN VISRC1 {RATIO1}
+FCTRL2   15 PN VISRC2 {RATIO2}
+FCTRL3   18 PN VISRC3 {RATIO3}
+FCTRL4   21 PN VISRC4 {RATIO4}
+FCTRL5   24 PN VISRC5 {RATIO5}
+FCTRL6   27 PN VISRC6 {RATIO6}
+EVCVS1   S1 13 12 PN {RATIO1}
+EVCVS2   S3 16 15 PN {RATIO2}
+EVCVS3   S5 19 18 PN {RATIO3}
+EVCVS4   S7 22 21 PN {RATIO4}
+EVCVS5   S9 25 24 PN {RATIO5}
+EVCVS6   S11 28 27 PN {RATIO6}
+RRPRI    PP 10 {RPRI}
+RR2D    11 12 {R2D}
+RR3D    14 15 {R3D}
+RR4D    17 18 {R4D}
+RR5D    20 21 {R5D}
+RR6D    23 24 {R6D}
+RR7D    26 27 {R7D}
+LL1   10 9 {L1}
+LX2D  9 11 {X2D}
+LX3D  9 14 {X3D}
+LX4D  9 17 {X4D}
+LX5D  9 20 {X5D}
+LX6D  9 23 {X6D}
+LX7D  9 26 {X7D}
+LXM   9 PN {XM}
+RRCORE 9 PN {RCORE}
+
+.ENDS NI1P7STRANS

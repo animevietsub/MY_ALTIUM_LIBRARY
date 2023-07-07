@@ -1,0 +1,41 @@
+* SS9012 PNP EPITAXIAL SILICON TRANSISTOR ELECTRICAL PARAMETERS
+*---------------------------------------------------------------
+* Vcbo (-40V) & Vceo (-20V)
+* 1W Output Amplifier of Potable Radios in Class B Push-pull Operation.
+*---------------------------------------------------------------
+* MODEL PARAMETERS FROM MEASURED DATA: SS9012-GBU
+*--------------------------------------------------------------- 
+.MODEL  SS9012  PNP 
++ LEVEL = 1
++ IS    = 2.041738E-14
++ NF    = 1.0
++ ISE   = 7.58578E-14
++ NE    = 2.0
++ BF    = 143.3
++ IKF   = 0.574349
++ VAF   = 47.75
++ NR    = 0.999
++ ISC   = 1.584893E-15
++ NC    = 1.00871
++ BR    = 14.345
++ IKR   = 0.426515
++ VAR   = 86.14
++ RB    = 57.5
++ IRB   = 7.94328E-06
++ RBM   = 8.092
++ RE    = 0.02
++ RC    = 0.7426
++ XTB   = 1.4132
++ EG    = 1.0885
++ XTI   = 3.0
++ CJE   = 3.51E-11
++ VJE   = 0.866
++ MJE   = 0.411
++ CJC   = 1.91E-11
++ VJC   = 0.787
++ MJC   = 0.394
++ XCJC  = 0.349
++ FC    = 0.5
+* --------------------------------------------------------------
+* FAIRCHILD    CASE: TO-92   PID: SS9012
+* FEB-01-2002 CREATION

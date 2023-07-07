@@ -1,0 +1,19 @@
+*************** Power Discrete Bipolar Electrical Parameters ***************
+** Package: TO-92
+** 2W Output Amplifier of Portable Radios in Class B Push-pull Operation.
+**--------------------------------------------------------------------------
+.MODEL SS8050 NPN
++ IS=3.77207e-13     BF=218.082          NF=1.0409        VAF=32.0909
++ IKF=0.84522        ISE=5.17224e-11     NE=2.12785       BR=5.45795
++ NR=1.06185         VAR=49.0994         IKR=2.19792      ISC=5.17224e-11
++ NC=3.96851         RB=5.74704          IRB=0.1          RBM=0.1
++ RE=0.000841718     RC=0.248242         XTB=0.626944     XTI=1
++ EG=1.05            CJE=2.73346e-11     VJE=0.721406     MJE=0.85
++ TF=6.43938e-10     XTF=1.43228         VTF=0.344801     ITF=1.20072
++ CJC=2.60002e-11    VJC=0.4             MJC=0.367851     XCJC=0.1
++ FC=0.9999          CJS=0               VJS=0.75         MJS=0.5
++ TR=1e-07           PTF=0               KF=0             AF=1
+**------------------------------------------------------------------------
+** Creation: May-29-2007
+** Fairchild Semiconductor
+

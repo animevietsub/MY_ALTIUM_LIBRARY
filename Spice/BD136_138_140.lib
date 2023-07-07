@@ -1,0 +1,42 @@
+* BD136/138/140 PNP EPITAXIAL SILICON TRANSISTOR
+*------------------------------------------------------
+* MEDIUM POWER LINEAR AND SWITCHING APPLICATIONS 
+* Based on BD140-16
+* BVcbo: BD135 -45V / BD137 -60V / BD139 -80V
+* BVceo: BD135 -45V / BD137 -60V / BD139 -80V
+* BVebo: -5V
+* Complement to BD135, BD137 and BD139 respectively
+*------------------------------------------------------
+.MODEL BD136_138_140 PNP (
++  IS   =2.9537E-13      
++  BF   =201.4
++  NF   =1.0 
++  BR   =23.765
++  NR   =1.021
++  ISE  =1.8002E-13
++  NE   =1.5
++  ISC  =7.0433E-12
++  NC   =1.38
++  VAF  =137.0
++  VAR  =8.41
++  IKF  =1.0993
++  IKR  =0.10
++  RB   =1.98 
++  RBM  =0.01
++  IRB  =0.011
++  RE   =0.1109
++  RC   =0.01
++  CJE  =2.1982E-10
++  VJE  =0.7211
++  MJE  =0.3685 
++  FC   =0.5
++  CJC  =6.8291E-11
++  VJC  =0.5499
++  MJC  =0.3668 
++  XCJC =0.5287 
++  XTB  =1.4883
++  EG   =1.2343
++  XTI  =3.0          )
+*-------------------------------------------------------
+* FAIRCHILD   CASE: TO-126   PID:BD140-16
+* 2000-03-20 CREATION 

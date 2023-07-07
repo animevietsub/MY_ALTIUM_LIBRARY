@@ -1,0 +1,5 @@
+* Copy from NGSPICE manual
+*
+.MODEL SIM_BUFFER d_buffer(rise_delay = 0.5e-9 fall_delay = 0.3e-9
++ input_load = 0.5e-12)
+

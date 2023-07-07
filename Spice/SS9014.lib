@@ -1,0 +1,21 @@
+********** PRE-AMPLIFIER, LOW LEVEL & LOW NOISE   **********
+** Product: SS9014
+** Package: TO-92
+** Terminals: Emitter(1) Base(2) Collector(3)
+
+.MODEL SS9014 NPN (                             
++ IS     = 2.87599E-14     BF     = 377.5           NF     = 1                  
++ BR     = 4.79            NR     = 1               ISE    = 4.7863E-15         
++ NE     = 1.5             ISC    = 1.44544E-14     NC     = 1.5                
++ VAF    = 123             VAR    = 11.29           IKF    = 1.1841             
++ IKR    = 0.275423        NK     = 1.193           RB     = 200                
++ RBM    = 10              IRB    = 1E-5            RE     = 0.56               
++ RC     = 5               CJE    = 1.7205E-11      VJE    = 0.6905907          
++ MJE    = 0.3193434       FC     = 0.5             CJC    = 6.295649E-12       
++ VJC    = 0.4164212       MJC    = 0.2559546       TF     = 5.89463E-10        
++ XTB    = 1.8881          EG     = 1.2415          XTI    = 3 
++ XCJC   = 0.451391        )                       
+
+** Creation: Jan-27-2005
+** Fairchild Seminconductor
+
