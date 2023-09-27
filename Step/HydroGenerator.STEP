@@ -1,0 +1,28 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION (( 'STEP AP214' ),
+    '1' );
+FILE_NAME ('HydroGenerator.STEP',
+    '2023-09-19T11:38:33',
+    ( '' ),
+    ( '' ),
+    'SwSTEP 2.0',
+    'SolidWorks 2016',
+    '' );
+FILE_SCHEMA (( 'AUTOMOTIVE_DESIGN' ));
+ENDSEC;
+
+DATA;
+#1 = PRODUCT_DEFINITION ( 'UNKNOWN', '', #10, #6 ) ;
+#2 = APPLICATION_PROTOCOL_DEFINITION ( 'draft international standard', 'automotive_design', 1998, #8 ) ;
+#3 = APPLICATION_PROTOCOL_DEFINITION ( 'draft international standard', 'automotive_design', 1998, #7 ) ;
+#4 = PRODUCT_CONTEXT ( 'NONE', #7, 'mechanical' ) ;
+#5 = PRODUCT ( 'HydroGenerator', 'HydroGenerator', '', ( #4 ) ) ;
+#6 = PRODUCT_DEFINITION_CONTEXT ( 'detailed design', #8, 'design' ) ;
+#7 = APPLICATION_CONTEXT ( 'automotive_design' ) ;
+#8 = APPLICATION_CONTEXT ( 'automotive_design' ) ;
+#9 = PRODUCT_RELATED_PRODUCT_CATEGORY ( 'part', '', ( #5 ) ) ;
+#10 = PRODUCT_DEFINITION_FORMATION_WITH_SPECIFIED_SOURCE ( 'ANY', '', #5, .NOT_KNOWN. ) ;
+#11 = PRODUCT_DEFINITION_SHAPE ( 'NONE', 'NONE',  #1 ) ;
+ENDSEC;
+END-ISO-10303-21;
